@@ -38,7 +38,7 @@ function Navbar() {
     <div className="navbar" style={notHome ? navStyle : navStyleHome}>
       <div className="navbar__main container">
         <div className="nav_logo">
-          <NavLink to="/#">
+          <NavLink>
             <img
               src="https://devsprint.excelmec.org/static/media/excellogowithtext.5937280d5965b8c122a0.png"
               alt=""
@@ -46,22 +46,22 @@ function Navbar() {
           </NavLink>
         </div>
         <div className="nav_contents">
-          <NavLink to="/#home" className="nav__link">
+          <NavLink  className="nav__link">
             Home
           </NavLink>
-          <NavLink to="/#about" className="nav__link">
+          <NavLink className="nav__link">
             About
           </NavLink>
-          <NavLink to="/#speakers" className="nav__link">
+          <NavLink className="nav__link">
             Speakers
           </NavLink>
-          <NavLink to="/#panelists" className="nav__link">
+          <NavLink  className="nav__link">
             Panelists
           </NavLink>
-          <NavLink to="/#schedule" className="nav__link">
+          <NavLink className="nav__link">
             Schedule
           </NavLink>
-          <NavLink to="/#contact" className="nav__link">
+          <NavLink  className="nav__link">
             Contact Us
           </NavLink>
         </div>
