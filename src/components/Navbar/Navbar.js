@@ -4,6 +4,7 @@ import Drawer from "@mui/material/Drawer";
 import { IoMenu, IoClose } from "react-icons/io5";
 import { Link as NavLink } from "react-scroll";
 // import { useScrollPosition } from "../../hooks/useScrollPosition"
+import excel_logo from '../../assets/excel_logo.svg'
 import "./Navbar.css";
 
 function Navbar() {
@@ -37,10 +38,10 @@ function Navbar() {
   return (
     <div className="navbar" style={notHome ? navStyle : navStyleHome}>
       <div className="navbar__main container">
-        <div className="nav_logo">
+        <div className="nav__logo">
           <NavLink>
-            <img
-              src="https://devsprint.excelmec.org/static/media/excellogowithtext.5937280d5965b8c122a0.png"
+            <img className="nav__logo__img"
+              src={excel_logo}
               alt=""
             />
           </NavLink>
