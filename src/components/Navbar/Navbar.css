@@ -7,16 +7,16 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #03012c;
+    /* background-color: #03012c; */
     /* backdrop-filter: blur(10px); */
     transition: 0.2s ease;
 }
 
 .navbar__main {
-    background-color: #03012c;
+    /* background-color: #03012c; */
     height: 100%;
     display: flex;
-    width: 95%;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
 }
@@ -47,7 +47,7 @@
 .nav_contents {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     gap: 2rem;
     width: 80%;
 }
