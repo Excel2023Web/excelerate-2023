@@ -1,4 +1,35 @@
 .landing__container {
-    width: 50%;
+    width: 90%;
+    display: flex;
     margin-top: 4rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.landing__left__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing__right__section {
+    color: #F74670;
+    font-size: 2rem;
+    font-family: var(--primary-font);
+}
+
+.landing__reg__button {
+    font-family: 'courier new';
+    color: #191617 !important;
+    border-radius: 1rem;
+    background: #E8496F;
+    border: none;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 10px;
+    width: 12rem;
+    height: 4rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: var(--primary-font);
+    font-weight: thick;
 }

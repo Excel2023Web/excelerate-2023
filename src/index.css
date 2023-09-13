@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700;800;900&display=swap');
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -12,7 +13,7 @@ body {
 /* #ad5389 */
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    font-family: var(--primary-font)
 }
 
  :root {
@@ -23,5 +24,5 @@ code {
       #3c1053 100%
     ); */
     --themeColour: #AA076B;
-    --primary-font: "Karla", sans-serif;
+    --primary-font: "Montserrat", sans-serif;
 }

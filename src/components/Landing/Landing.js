@@ -9,10 +9,10 @@ function Landing() {
         </div>
         <div className="landing__right__section">
             <div className="landing__right__top">
-
+                <h1>Campus<br/>Ambassador</h1>
             </div>
             <div className="landing__right__bottom">
-
+                <button className='landing__reg__button'>Register</button>
             </div>
         </div>
     </div>
