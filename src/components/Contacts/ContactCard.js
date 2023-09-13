@@ -12,9 +12,9 @@ const ContactCard = () => {
         </div>
         
         <div className="ctct__icons">
-            <FiLinkedin />
-            <FiMail/>
-            <FiPhoneCall/>
+            <FiLinkedin className='social__icon_contact'/>
+            <FiMail className='social__icon_contact'/>
+            <FiPhoneCall className='social__icon_contact'/>
         </div>
       </div>
     </div>

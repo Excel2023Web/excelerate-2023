@@ -1,0 +1,30 @@
+.footer__main{
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: #ffff;
+    font-weight: 300;
+    font-family: var(--primary-font);
+    font-size: 1rem;
+}
+.mec___logo_footer{
+    width: 9rem;
+}
+.excel__logo_footer{
+    width: 9rem;
+}
+.footer_content{
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+}
+.footer_social_logos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}

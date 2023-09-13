@@ -7,7 +7,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     /* background: radial-gradient(200.65% 776.86% at -9.28% 116.91%,#140915 35.44%,var(--themeColour) 100%); */
     /* background: radial-gradient( 200.65% 776.86% at -9.28% 116.91%, #140915 15.44%, #80489C 100%); */
-    background: #1A1617;
+    /* background: #1A1617; */
 }
 
 
@@ -39,4 +39,9 @@ code {
     color: #F74670;
     font-family: var(--primary-font);
     font-size: 2rem;
+}
+@media screen and (max-width: 590px){
+    .section__title >img{
+        display: none;
+    }
 }

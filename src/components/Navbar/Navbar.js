@@ -3,13 +3,13 @@ import { useLocation } from "react-router-dom";
 import Drawer from "@mui/material/Drawer";
 import { IoMenu, IoClose } from "react-icons/io5";
 import { Link as NavLink } from "react-scroll";
-// import { useScrollPosition } from "../../hooks/useScrollPosition"
-import excel_logo from '../../assets/excel_logo.svg'
+import { useScrollPosition } from "../../hooks/useScrollPosition";
+import excel_logo from "../../assets/excel_logo.svg";
 import "./Navbar.css";
 
 function Navbar() {
   const [drawer, setDrawer] = useState(false);
-
+  let scrollPosition = useScrollPosition();
   const handleDrawerOpen = () => {
     setDrawer(true);
   };
@@ -23,48 +23,33 @@ function Navbar() {
   const notHome = location.pathname.length > 1 ? true : false;
 
   const navStyleHome = {
-    // background: scrollPosition > 300 ? "#111111" : "rgba(17, 17, 17, 0.1)",
-    // boxShadow:
-    //   scrollPosition > 200 ? "0px 2px 9px rgba(0, 0, 0, 0.11)" : "none",
-    // backdropFilter: 'blur(10px)'
-  };
+    background: scrollPosition > 300 ? "#111111" : "rgba(17, 17, 17, 0.1)",
+    boxShadow:
+      scrollPosition > 200 ? "0px 2px 9px rgba(0, 0, 0, 0.11)" : "none",
+    backdropFilter: 'blur(10px)'
+  }
   const navStyle = {
-    // background: scrollPosition > 300 ? "#111111" : "#111111",
-    // boxShadow:
-    //   scrollPosition > 200 ? "0px 2px 9px rgba(0, 0, 0, 0.11)" : "none",
-    // backdropFilter: 'none'
-  };
+    background: scrollPosition > 300 ? "#111111" : "#111111",
+    boxShadow:
+      scrollPosition > 200 ? "0px 2px 9px rgba(0, 0, 0, 0.11)" : "none",
+    backdropFilter: 'none'
+  }
 
   return (
     <div className="navbar" style={notHome ? navStyle : navStyleHome}>
       <div className="navbar__main container">
         <div className="nav__logo">
           <NavLink>
-            <img className="nav__logo__img"
-              src={excel_logo}
-              alt=""
-            />
+            <img className="nav__logo__img" src={excel_logo} alt="" />
           </NavLink>
         </div>
         <div className="nav_contents">
-          <NavLink  className="nav__link">
-            Home
-          </NavLink>
-          <NavLink className="nav__link">
-            About
-          </NavLink>
-          <NavLink className="nav__link">
-            Speakers
-          </NavLink>
-          <NavLink  className="nav__link">
-            Panelists
-          </NavLink>
-          <NavLink className="nav__link">
-            Schedule
-          </NavLink>
-          <NavLink  className="nav__link">
-            Contact Us
-          </NavLink>
+          <NavLink className="nav__link">Home</NavLink>
+          <NavLink className="nav__link">About</NavLink>
+          <NavLink className="nav__link">Speakers</NavLink>
+          <NavLink className="nav__link">Panelists</NavLink>
+          <NavLink className="nav__link">Schedule</NavLink>
+          <NavLink className="nav__link">Contact Us</NavLink>
         </div>
         {/* <a href='https://rzp.io/l/finnext' target='_blank' rel="noreferrer">
           <button className="nav_btn">Register</button>

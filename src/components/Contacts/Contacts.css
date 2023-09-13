@@ -25,7 +25,6 @@
 }
 .contact__card_desc_part {
   transform: translateY(-20%);
-  background-color: #191617;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,43 +32,56 @@
   gap: 0.5rem;
   padding-bottom: 0.5rem;
   border-radius: 20px;
-  box-shadow:  5px 5px 10px #f74670,
-             -5px -5px 10px #f74670;
-
+  background: #191617;
+  box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.53),
+    4px 4px 8px 0px rgba(0, 0, 0, 0.5);
 }
-.name_n_pos_ctct{
-    gap: 0.25rem;
-    width: 100%;
-    height: 80%;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
+.name_n_pos_ctct {
+  gap: 0.25rem;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
 }
 .ctct_image {
   height: 15rem;
   border-radius: 20px;
-  box-shadow:  5px 5px 10px #f74670,
-             -5px -5px 10px #f74670;
+  /* background: #191617; */
+box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.53), 4px 4px 8px 0px rgba(0, 0, 0, 0.50);
+
+  /* box-shadow:  5px 5px 10px #f74670,
+             -5px -5px 10px #f74670; */
   /* width: 10rem; */
 }
 .ctct__name {
-  color: #f74670;
+  color: #ffff;
   font-weight: 700;
 }
 
 .ctct__position {
-  color: #f74670;
+  color: #ffff;
   margin-top: -10px;
 }
-.ctct__icons{
-    color: #f74670;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    gap: 1.5rem;
+.ctct__icons {
+  color: #f74670;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  gap: 1.5rem;
+}
+.social__icon_contact{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.social__icon_contact :hover{
+  width: 1.6rem;
+  height: 1.6rem;
+  transition: 0.2 ease-in;
+  cursor: pointer;
 }
