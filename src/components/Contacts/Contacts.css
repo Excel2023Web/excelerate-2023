@@ -1,0 +1,75 @@
+.contacts__main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contacts__cards_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
+}
+.contact__card_main {
+  width: 15rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: ; */
+}
+.contact__card_desc_part {
+  transform: translateY(-20%);
+  background-color: #191617;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 20px;
+  box-shadow:  5px 5px 10px #f74670,
+             -5px -5px 10px #f74670;
+
+}
+.name_n_pos_ctct{
+    gap: 0.25rem;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.ctct_image {
+  height: 15rem;
+  border-radius: 20px;
+  box-shadow:  5px 5px 10px #f74670,
+             -5px -5px 10px #f74670;
+  /* width: 10rem; */
+}
+.ctct__name {
+  color: #f74670;
+  font-weight: 700;
+}
+
+.ctct__position {
+  color: #f74670;
+  margin-top: -10px;
+}
+.ctct__icons{
+    color: #f74670;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 1.5rem;
+}
