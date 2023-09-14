@@ -1,4 +1,12 @@
 .landing__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing__container_up {
     width: 90%;
     display: flex;
     margin-top: 4rem;
@@ -22,7 +30,7 @@
     font-family: 'courier new';
     color: #191617 !important;
     border-radius: 1rem;
-    background: #E8496F;
+    background: var(--secondaryColor);
     border: none;
     outline: none;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 10px;
@@ -31,5 +39,48 @@
     text-align: center;
     font-size: 1.5rem;
     font-family: var(--primary-font);
-    font-weight: thick;
+    font-weight: 500;
+}
+
+.landing__features {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    /* background-color: red; */
+}
+
+.landing__card {
+    width: 18rem;
+    background-color: var(--backgroundColorCard);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: rgb(16, 10, 12);
+    box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25), 4px 4px 8px 0px rgba(0, 0, 0, 0.5);
+    margin: 2rem;
+    font-weight: 500;
+}
+
+.landing__card__heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 5px solid #080c17;
+    box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25), 4px 4px 8px 0px rgba(0, 0, 0, 0.5);
+    transform: translateY(-45%);
+    background-color: var(--secondaryColor);
+    color: var(--backgroundColorCard);
+}
+
+.landing__card__content h4 {
+    color: var(--secondaryColor);
+    font-size: 2rem;
 }
