@@ -32,10 +32,10 @@ function Landing() {
         </div>
         <div className="landing__card">
             <div className="landing__card__heading">
-                <h1>40k</h1>
+                <h1>40+</h1>
             </div>
             <div className="landing__card__content">
-                <h4>Evenets</h4>
+                <h4>Events</h4>
             </div>
         </div>
         <div className="landing__card">
