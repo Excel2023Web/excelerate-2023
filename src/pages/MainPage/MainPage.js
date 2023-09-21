@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar,Landing,Contacts, Footer, RespAndBenefits,WhatsExcel } from '../../components'
+import { Navbar,Landing,Contacts, Footer, RespAndBenefits,WhatsExcel, Reward } from '../../components'
 const MainPage = () => {
   return (
     <div className='main__container'>
@@ -7,8 +7,10 @@ const MainPage = () => {
       <Landing/>
       <WhatsExcel/>
       <RespAndBenefits/>
+      <Reward/>
       <Contacts/>
       <Footer/>
+
     </div>
   )
 }

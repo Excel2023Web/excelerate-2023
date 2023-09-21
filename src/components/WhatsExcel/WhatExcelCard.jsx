@@ -3,6 +3,7 @@ import Carousel from "react-spring-3d-carousel";
 import { v4 as uuidv4 } from "uuid";
 import { config } from "react-spring";
 import Pic1 from "../../assets/png/whatsimg.png";
+import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 import "./WhatsExcel.css";
 export default class ImageSlider extends Component {
   state = {
@@ -75,7 +76,7 @@ export default class ImageSlider extends Component {
       <div className="whatexcel__carosul">
         <button className="whatexcel__carosul__btn"  onClick={() => {
                 this.setState({ goToSlide: this.state.goToSlide - 1 });
-              }}>+</button>
+              }}><FaAngleLeft/></button>
         <div className="whatexcel__carosul__img">
           <Carousel
             slides={this.slides}
@@ -89,7 +90,7 @@ export default class ImageSlider extends Component {
 
         <button className="whatexcel__carosul__btn" onClick={() => {
                 this.setState({ goToSlide: this.state.goToSlide + 1 });
-              }}>-</button>
+              }}><FaAngleRight/> </button>
       </div>
     );
   }

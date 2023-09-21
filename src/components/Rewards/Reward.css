@@ -1,0 +1,84 @@
+.reward__section,
+.reward__heading__section {
+    width: 100%;
+    font-family: var(--secondaryColor);
+}
+
+.reward__middle_head {
+    color: white;
+}
+
+.reward__top__section {
+    width: 80%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reward__left {
+    width: 40%;
+}
+
+.reward__right {
+    width: 70%;
+    height: 100%;
+}
+
+.reward__right__top {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.reward__cards__priz {
+    color: white;
+    display: flex;
+    width: 18rem;
+    justify-content: space-around;
+    align-items: center;
+    /* background: red; */
+    padding: 0.5rem;
+    border-radius: 1rem;
+    /* border: 1px solid #FFCE31; */
+}
+
+.reward__first__prize {
+    box-shadow: #FFE590 0px 0px 7px -1px;
+}
+
+.reward__second__prize {
+    box-shadow: #F8F8F8 0px 0px 7px -1px;
+}
+
+.reward__third__prize {
+    box-shadow: #CF9A63 0px 0px 7px -1px;
+}
+
+.reward__cards__priz h2 {
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin: 0px;
+    background: linear-gradient(180deg, #E9C310 25.45%, #FFE24B 55.28%, #E8A303 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.reward__ul__item {
+    margin-top: 2rem;
+    color: white;
+    font-weight: 700;
+    font-family: var(--primary-font);
+    line-height: 1.7rem;
+}
+
+.reward__pink {
+    color: var(--secondaryColor);
+}
