@@ -31,7 +31,13 @@
     justify-content: space-around;
     align-items: center;
     gap: 2rem;
-    flex-wrap: wrap;
+}
+.reward__right__middle{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:2rem;
 }
 
 .reward__cards__priz {

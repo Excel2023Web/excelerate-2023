@@ -30,6 +30,8 @@ function Reward() {
               <img src={secondplace} alt="" />
               <h2>10,000</h2>
             </div>
+          </div>
+          <div className="reward__right__middle">
             <div className="reward__cards__priz reward__third__prize">
               <img src={thirdplace} alt="" />
               <h2>10,000</h2>
