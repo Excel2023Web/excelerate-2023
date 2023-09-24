@@ -32,7 +32,13 @@ function Landing() {
         </div>
         <div className="landing__card">
           <div className="landing__card__heading">
-            <h1>40+</h1>
+            <h1><CountUp
+                end={40}
+                duration={2}
+                enableScrollSpy={true}
+                preserveValue={true}
+              />
+              k</h1>
           </div>
           <div className="landing__card__content">
             <h4>Events</h4>
@@ -40,7 +46,13 @@ function Landing() {
         </div>
         <div className="landing__card">
           <div className="landing__card__heading">
-            <h1>40k</h1>
+            <h1><CountUp
+                end={40}
+                duration={2}
+                enableScrollSpy={true}
+                preserveValue={true}
+              />
+              k</h1>
           </div>
           <div className="landing__card__content">
             <h4>Prize Pool</h4>
