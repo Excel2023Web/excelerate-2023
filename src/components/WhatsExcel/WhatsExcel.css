@@ -1,0 +1,123 @@
+.Whatexcel__continaer,
+.whatexcel__top,
+.whatexcel__heading {
+    width: 100%;
+    font-family: var(--primary-font);
+}
+
+.whatexcel__heading {
+    color: var(--secondaryColor);
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatexcel__heading h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    color: var(--secondaryColor);
+}
+
+.whatexcel__para {
+    width: 80%;
+    margin: auto;
+    color: white;
+    font-family: var(--primary-font);
+    text-align: center;
+    line-height: 1.7rem;
+}
+
+.whats__slider {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto;
+}
+
+.whatexcel__carosul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.whatexcel__carosul__img {
+    width: 50%;
+    height: 25rem;
+    margin: 0 auto;
+    /* background-color: red; */
+    display: flex;
+}
+
+.whatexcel__carosul__btn {
+    /* Add your button-specific styles here */
+    /* font-size: 24px;
+    height: max-content;
+    padding: 10px 20px; */
+    /* Adjust the padding as needed */
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 13px;
+    color: var(--secondaryColor);
+    font-size: 1.4rem;
+    background-color: #191617;
+    box-shadow: 0px 2px 12px var(--secondaryColor);
+    cursor: pointer;
+    margin: 0 9rem;
+}
+
+@media only screen and (max-width: 1300px) {}
+
+@media (min-device-width: 20px) and (max-device-width: 500px) {}
+
+@media only screen and (max-width: 1200px) {
+    .whatexcel__heading h1 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) {}
+
+@media screen and (max-width: 992px) {
+    .whatexcel__top {
+        width: 80%;
+        margin: auto;
+    }
+    .whatexcel__heading h1 {
+        font-size: 1.5rem;
+    }
+    .whatexcel__heading>img {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .whatexcel__heading h1 {
+        font-size: 1.2rem;
+    }
+    .whatexcel__heading>img {
+        width: 20%;
+    }
+    .whatexcel__para {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .whatexcel__heading img {
+        display: none;
+    }
+    .reward__right__top {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {}
+
+@media only screen and (device-width: 768px) {}
