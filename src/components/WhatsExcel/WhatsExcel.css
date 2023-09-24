@@ -107,7 +107,14 @@
     }
 }
 
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 600px) {
+    .whatexcel__heading img {
+        display: none;
+    }
+    .reward__right__top {
+        flex-direction: column;
+    }
+}
 
 @media screen and (max-width: 400px) {}
 

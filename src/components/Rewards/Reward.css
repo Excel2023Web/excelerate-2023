@@ -18,6 +18,9 @@
 
 .reward__left {
     width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .reward__right {
@@ -32,12 +35,13 @@
     align-items: center;
     gap: 2rem;
 }
-.reward__right__middle{
-    width:100%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin-top:2rem;
+
+.reward__right__middle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
 }
 
 .reward__cards__priz {
@@ -88,3 +92,53 @@
 .reward__pink {
     color: var(--secondaryColor);
 }
+
+@media only screen and (max-width: 1300px) {}
+
+@media (min-device-width: 20px) and (max-device-width: 500px) {}
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 1100px) {
+    .reward__top__section {
+        width: 90%;
+    }
+    .reward__cards__priz {
+        width: 12rem;
+    }
+    .reward__cards__priz h2 {
+        font-size: 1.5rem;
+    }
+    .reward__cards__priz img {
+        width: 2rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .reward__cards__priz {
+        width: 10rem;
+    }
+    .reward__cards__priz h2 {
+        font-size: 1.2rem;
+    }
+    .reward__left img {
+        width: 126%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .reward__top__section {
+        flex-direction: column;
+    }
+    .section__title h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 400px) {}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {}
+
+@media only screen and (device-width: 768px) {}
