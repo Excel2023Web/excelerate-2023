@@ -36,6 +36,7 @@
 
 .resp__second__heading {
     color: white;
+    text-align: center;
 }
 
 .resposibility__points {
@@ -97,7 +98,7 @@
         font-size: 2rem;
     }
     .resp___points li {
-        font-size: .7rem;
+        font-size: 1rem;
     }
 }
 

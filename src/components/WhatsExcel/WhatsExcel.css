@@ -97,13 +97,13 @@
 
 @media screen and (max-width: 700px) {
     .whatexcel__heading h1 {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
     .whatexcel__heading>img {
         width: 20%;
     }
     .whatexcel__para {
-        font-size: .7rem;
+        font-size: 1rem;
     }
 }
 

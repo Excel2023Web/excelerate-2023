@@ -130,8 +130,15 @@
     .reward__top__section {
         flex-direction: column;
     }
+    .section__title {
+        width: 80%;
+        margin: auto;
+    }
     .section__title h1 {
         font-size: 2rem;
+    }
+    .section__title img {
+        display: none;
     }
 }
 
