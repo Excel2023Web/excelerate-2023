@@ -16,7 +16,7 @@ function WhatsExcel() {
         <h1 data-aos="fade-up">What is EXCEL</h1>
         <img src={titleVecotrRight} alt="" />
       </div>
-      <p className="whats_excel_content">
+      <p data-aos="fade-up"aos-delay="400" className="whats_excel_content">
         In 2001, the students of Govt. Model Engineering College founded Excel,
         the second-largest techno-managerial festival in the country and the
         first of its kind in South India. Excel has steadily hosted students

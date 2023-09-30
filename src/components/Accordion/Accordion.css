@@ -18,16 +18,16 @@
 .accordion {
     width: 850px;
     font-family: "Montserrat-SemiBold", Helvetica;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 600;
-    left: 0;
+    /* left: 0; */
     letter-spacing: 0;
     line-height: normal;
-    top: 0;
+    /* top: 0; */
 }
 
 .title h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .item {
