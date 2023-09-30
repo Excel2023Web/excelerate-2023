@@ -43,7 +43,7 @@ function RespAndBenefits() {
         <div className="responsibilit__heading">
           <div data-aos="zoom-in" aos-delay="200" className="resp__upper__heading">
             <img src={titleVectorLeft} alt="" />
-            <h1>Benifits</h1>
+            <h1>Benefits</h1>
             <img src={titleVecotrRight} alt="" />
           </div>
         </div>
