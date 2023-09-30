@@ -4,6 +4,7 @@ import titleVectorLeft from "../../assets/svg/title_vector_left.svg";
 import titleVecotrRight from "../../assets/svg/title__vector_right.svg";
 import down from "../../assets/svg/down_arrow.svg";
 import up from "../../assets/svg/up_arrow.svg";
+import faqimg from "../../assets/png/faq.png"
 import Aos from "aos";
 
 const Accordion = () => {
@@ -28,7 +29,7 @@ const Accordion = () => {
       <div className="wrapper">
         <div className="accordion">
           {data.map((item, i) => (
-            <div data-aos="zoom-in" aos-delay="200" className="item">
+            <div data-aos="zoom-in" aos-delay="150" className={`item aos-init aos-animate ${selected === i ? 'selected' : ''}`}>
               <div className="title" onClick={() => toggle(i)}>
                 <h2>{item.question}</h2>
                 <span>
@@ -45,6 +46,7 @@ const Accordion = () => {
             </div>
           ))}
         </div>
+        <div className="faqimg"><img className="faqimgimg" alt="" src={faqimg}/></div>
       </div>
     </div>
   );

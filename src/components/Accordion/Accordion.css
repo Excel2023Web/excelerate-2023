@@ -40,7 +40,12 @@
     font-family: "Montserrat-Regular", Helvetica;
     line-height: normal;
 }
-
+.selected{
+   
+    background-color: #F746701A;
+    
+    
+}
 .title {
     display: flex;
     justify-content: space-between;
@@ -63,6 +68,10 @@
     transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 
+.faqimgimg{
+    height: 21rem;
+}
+
 @media only screen and (max-width: 1300px) {}
 
 @media (min-device-width: 20px) and (max-device-width: 500px) {}
@@ -73,7 +82,14 @@
 
 @media screen and (max-width: 992px) {}
 
-@media screen and (max-width: 800px) {}
+@media screen and (max-width: 800px) {
+    .wrapper{
+        flex-direction: column-reverse;
+    }
+    .accordion{
+        width: auto;
+    }
+}
 
 @media screen and (max-width: 600px) {}
 
