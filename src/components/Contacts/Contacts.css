@@ -7,16 +7,19 @@
 }
 
 .contacts__cards_container {
-    width: 100%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 5rem;
     padding: 2rem;
 }
 
+.ctct__icons >a{
+    color: #f74670;
+}
 .contact__card_main {
     width: 15rem;
     height: 25rem;
