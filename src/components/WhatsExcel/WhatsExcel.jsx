@@ -11,27 +11,21 @@ function WhatsExcel() {
   }, []);
   return (
     <div className="Whatexcel__continaer">
-      {/* <div className="whatexcel__top"> */}
-        <div className="whatexcel__heading">
-          <img src={titleVectorLeft} alt="" />
-          <h1 data-aos="fade-up">What is EXCEL</h1>
-          <img src={titleVecotrRight} alt="" />
-        </div>
-        <ImageSlider />
-        {/* <p data-aos="fade-up" aos-delay="200" className="whatexcel__para">
-          In 2001, the students of Govt. Model Engineering College founded
-          Excel, the second-largest techno-managerial festival in the country
-          and the first of its kind in South India. Excel has steadily hosted
-          students from more than 2000 universities and 1000 institutions across
-          the nation as it has grown exponentially over the years.
-          <br />
-          The 22 successful editions of Excel that have preceded it have a rich
-          legacy, and Excel 2022 promises to be even better.
-        </p> */}
-      {/* </div> */}
-      {/* <div className="whats__slider">
-        
-      </div> */}
+      <div className="whatexcel__heading">
+        <img src={titleVectorLeft} alt="" />
+        <h1 data-aos="fade-up">What is EXCEL</h1>
+        <img src={titleVecotrRight} alt="" />
+      </div>
+      <p className="whats_excel_content">
+        In 2001, the students of Govt. Model Engineering College founded Excel,
+        the second-largest techno-managerial festival in the country and the
+        first of its kind in South India. Excel has steadily hosted students
+        from more than 2000 universities and 1000 institutions across the nation
+        as it has grown exponentially over the years. The 22 successful editions
+        of Excel that have preceded it have a rich legacy, and Excel 2022
+        promises to be even better.
+      </p>
+      <ImageSlider />
     </div>
   );
 }

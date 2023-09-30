@@ -3,10 +3,11 @@ import "./RespAndBenefits.css";
 import titleVectorLeft from "../../assets/svg/title_vector_left.svg";
 import titleVecotrRight from "../../assets/svg/title__vector_right.svg";
 import Aos from "aos";
+// import dottedSqr from "../../assets/svg/dottedSqr.svg";
 function RespAndBenefits() {
-  useEffect(()=>{
-    Aos.init({duration:700})
-  },[])
+  useEffect(() => {
+    Aos.init({ duration: 700 });
+  }, []);
   return (
     <div className="resp__bene__container">
       <div className="responsibilit__container">
@@ -38,18 +39,31 @@ function RespAndBenefits() {
           </ul>
         </div>
       </div>
+      {/* <div className="vector__right_sqr_contain">
+        <img src={dottedSqr} className="resp__down_right_vector" alt="" />
+      </div> */}
 
       <div className="responsibilit__container">
+        {/* <img src={dottedSqr} className="resp__down_right_vector" alt="" /> */}
         <div className="responsibilit__heading">
-          <div data-aos="zoom-in" aos-delay="200" className="resp__upper__heading">
+          <div
+            data-aos="zoom-in"
+            aos-delay="200"
+            className="resp__upper__heading"
+          >
             <img src={titleVectorLeft} alt="" />
             <h1>Benefits</h1>
             <img src={titleVecotrRight} alt="" />
+            
           </div>
+          
         </div>
+        
         <div className="resposibility__points">
+          
           <ul data-aos="zoom-in" aos-delay="200" className="resp___points">
-            <li >
+            
+            <li>
               Get the chance to avail cash prizes and rewards of upto 12k!
             </li>
             <li>
@@ -67,6 +81,7 @@ function RespAndBenefits() {
             </li>
           </ul>
         </div>
+        {/* <img src={dottedSqr} className="resp__down_left_vector" alt="" /> */}
       </div>
     </div>
   );
