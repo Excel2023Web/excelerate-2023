@@ -12,6 +12,7 @@ function Reward() {
     Aos.init({ duration: 1100 });
   }, []);
   return (
+    <div className="rewards__container">
     <div className="reward__section">
       <div data-aos="fade-up" aos-delay="200" className="section__title">
         <img data-aos="zoom-in" aos-delay="200" src={titleVectorLeft} alt="" />
@@ -62,6 +63,7 @@ function Reward() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

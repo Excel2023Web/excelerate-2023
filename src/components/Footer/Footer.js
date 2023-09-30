@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import mec_logo from "../../assets/png/mec_logo.png";
-import excel_logo from "../../assets/svg/excel_logo.svg";
+import excel_logo from "../../assets/png/excelLogoWithText.png";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FiTwitter, FiLinkedin, FiFacebook } from "react-icons/fi";
 const Footer = () => {

@@ -99,6 +99,7 @@
     }
     .resp___points li {
         font-size: 1rem;
+        width: 60%;
     }
 }
 
