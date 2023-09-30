@@ -5,7 +5,11 @@
     width: 100%;
     font-family: var(--primary-font);
 }
+/* .responsibilit__container{
+    width: 100%;
+    background: url('../../assets/png/benefitsBg.png') repeat center center / cover;
 
+} */
 .responsibilit__container {
     margin: 2rem 0rem 6rem 0rem;
 }
