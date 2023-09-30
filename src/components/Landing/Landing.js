@@ -43,7 +43,7 @@ function Landing() {
       <div className="landing__container_up">
         <img data-aos="zoom-in" className="landing__left__section" src={landing} alt="" />
         <div className="landing__right__section">
-          <h1 data-aos="zoom-in">Campus Ambassador</h1>
+          <h1 data-aos="zoom-in">Excelerate </h1>
           {/* <button className="reg__btn" onClick={onLoginClick}>Register</button> */}
           {AccountHandler.isUserLoggedIn() ? (
             <div>
