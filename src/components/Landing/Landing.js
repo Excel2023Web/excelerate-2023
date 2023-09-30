@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useState, useContext } from "react";
+import { useScreenWidth } from "../../hooks/useScreenWidth";
 import "./Landing.css";
 import landing from "../../assets/landing.svg";
 import CountUp from "react-countup";
-import AccountHandler from "../../auth/accountHandler";
+// import AccountHandler from "../../auth/accountHandler";
 import { useNavigate } from "react-router-dom";
-
+import AccountHandler from "../../auth/accountHandler";
+import PhoneNoDialog from "../PhoneNoDialog/PhoneNoDialog";
+import IsAuthRender from "../IsAuthRender/IsAuthRender";
+import { UserContext } from "../../contexts/UserContext";
 function Landing() {
-  const navigate=useNavigate();
+  const [open, setOpen] = useState(false);
+  const size = useScreenWidth();
+
+  const { referrelId, isAmbassador } = useContext(UserContext);
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const navigate = useNavigate();
   const onLoginClick = () => {
     if (!AccountHandler.isUserLoggedIn()) {
       AccountHandler.logInUser();
@@ -26,7 +39,48 @@ function Landing() {
         <img className="landing__left__section" src={landing} alt="" />
         <div className="landing__right__section">
           <h1>Campus Ambassador</h1>
-          <button className="reg__btn" onClick={onLoginClick}>Register</button>
+          {/* <button className="reg__btn" onClick={onLoginClick}>Register</button> */}
+          {AccountHandler.isUserLoggedIn() ? (
+            <div>
+              {AccountHandler.isUserLoggedIn() ? (
+        <div>
+          {isAmbassador ? (
+            <IsAuthRender
+              state={2}
+              referrelId={referrelId}
+              open={open}
+              setOpen={setOpen}
+              onLoginClick={onLoginClick}
+            />
+          ) : (
+            <IsAuthRender
+              state={1}
+              referrelId={referrelId}
+              open={open}
+              setOpen={setOpen}
+              onLoginClick={onLoginClick}
+            />
+          )}
+        </div>
+      ) : (
+        <IsAuthRender
+          state={3}
+          referrelId={referrelId}
+          open={open}
+          setOpen={setOpen}
+          onLoginClick={onLoginClick}
+        />
+      )}
+            </div>
+          ) : (
+            <IsAuthRender
+              state={3}
+              referrelId={referrelId}
+              open={open}
+              setOpen={setOpen}
+              onLoginClick={onLoginClick}
+            />
+          )}
         </div>
       </div>
 
