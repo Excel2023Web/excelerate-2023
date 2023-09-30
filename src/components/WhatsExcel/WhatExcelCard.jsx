@@ -6,6 +6,7 @@ import Pic1 from "../../assets/png/whatsimg.png";
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 import "./WhatsExcel.css";
 export default class ImageSlider extends Component {
+
   state = {
     goToSlide: 0,
     offsetRadius: 1,

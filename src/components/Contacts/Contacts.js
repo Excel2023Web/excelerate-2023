@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Contacts.css";
 import titleVectorLeft from "../../assets/svg/title_vector_left.svg";
 import titleVecotrRight from "../../assets/svg/title__vector_right.svg";
 import ContactCard from "./ContactCard";
+import Aos from "aos";
 const Contacts = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1100 });
+  },[]);
   return (
     <div className="contacts__main">
-      <div className="section__title">
+      <div data-aos="zoom-in" aos-delay="200" className="section__title">
         <img src={titleVectorLeft} alt="" />
         <h1>CONTACTS</h1>
         <img src={titleVecotrRight} alt="" />

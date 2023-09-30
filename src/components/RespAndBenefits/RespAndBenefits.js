@@ -1,33 +1,37 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./RespAndBenefits.css";
 import titleVectorLeft from "../../assets/svg/title_vector_left.svg";
 import titleVecotrRight from "../../assets/svg/title__vector_right.svg";
+import Aos from "aos";
 function RespAndBenefits() {
+  useEffect(()=>{
+    Aos.init({duration:700})
+  },[])
   return (
     <div className="resp__bene__container">
       <div className="responsibilit__container">
         <div className="responsibilit__heading">
           <div className="resp__upper__heading">
-            <img src={titleVectorLeft} alt="" />
-            <h1>Responsibilities</h1>
+            <img data-aos="zoom-in" src={titleVectorLeft} alt="" />
+            <h1 data-aos="fade-up">Responsibilities</h1>
             <img src={titleVecotrRight} alt="" />
           </div>
-          <h2 className="resp__second__heading">
+          <h2 data-aos="fade-up" className="resp__second__heading">
             Become the face of Excel in your Campus!
           </h2>
         </div>
         <div className="resposibility__points">
           <ul className="resp___points">
-            <li>
+            <li data-aos="fade-up" aos-delay="150">
               Connect your classmates and friends with the innovative and lit
               events that Excel conducts.
             </li>
-            <li>
+            <li data-aos="fade-up" aos-delay="200">
               Promote the posters and links shared to you in your college and
               provide sufficient publicity.
             </li>
 
-            <li>
+            <li data-aos="fade-up" aos-delay="300">
               Encourage students of your college to participate in Excel and
               join one of the most reputed tech fests around!
             </li>
@@ -37,15 +41,15 @@ function RespAndBenefits() {
 
       <div className="responsibilit__container">
         <div className="responsibilit__heading">
-          <div className="resp__upper__heading">
+          <div data-aos="zoom-in" aos-delay="200" className="resp__upper__heading">
             <img src={titleVectorLeft} alt="" />
             <h1>Benifits</h1>
             <img src={titleVecotrRight} alt="" />
           </div>
         </div>
         <div className="resposibility__points">
-          <ul className="resp___points">
-            <li>
+          <ul data-aos="zoom-in" aos-delay="200" className="resp___points">
+            <li >
               Get the chance to avail cash prizes and rewards of upto 12k!
             </li>
             <li>
