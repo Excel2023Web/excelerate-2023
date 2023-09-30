@@ -27,14 +27,14 @@ function Navbar() {
     background: scrollPosition > 300 ? "#111111" : "rgba(17, 17, 17, 0.1)",
     boxShadow:
       scrollPosition > 200 ? "0px 2px 9px rgba(0, 0, 0, 0.11)" : "none",
-    backdropFilter: 'blur(10px)'
-  }
+    backdropFilter: "blur(10px)",
+  };
   const navStyle = {
     background: scrollPosition > 300 ? "#111111" : "#111111",
     boxShadow:
       scrollPosition > 200 ? "0px 2px 9px rgba(0, 0, 0, 0.11)" : "none",
-    backdropFilter: 'none'
-  }
+    backdropFilter: "none",
+  };
 
   return (
     <div className="navbar" style={notHome ? navStyle : navStyleHome}>
@@ -45,22 +45,29 @@ function Navbar() {
           </NavLink>
         </div>
         <div className="nav_contents">
-          <NavLink className="nav__link">Home</NavLink>
-          <NavLink className="nav__link">About</NavLink>
-          <NavLink className="nav__link">Speakers</NavLink>
-          <NavLink className="nav__link">Panelists</NavLink>
-          <NavLink className="nav__link">Schedule</NavLink>
-          <NavLink className="nav__link">Contact Us</NavLink>
+          <NavLink to="home" smooth={true} className="nav__link">
+            Home
+          </NavLink>
+          <NavLink to="about" smooth={true} className="nav__link">
+            About
+          </NavLink>
+          <NavLink to="benefits" smooth={true} className="nav__link">
+            Benefits
+          </NavLink>
+          <NavLink to="rewards" smooth={true} className="nav__link">
+            Rewards
+          </NavLink>
+          <NavLink to="faq" smooth={true} className="nav__link">
+            FAQ
+          </NavLink>
+          <NavLink to="contacts" smooth={true} className="nav__link">
+            Contacts
+          </NavLink>
         </div>
-        {/* <a href='https://rzp.io/l/finnext' target='_blank' rel="noreferrer">
-          <button className="nav_btn">Register</button>
-        </a> */}
-
         <div className="nav_hamburger" onClick={handleDrawerOpen}>
           <IoMenu className="nam_menu_icon" />
         </div>
       </div>
-
       <Drawer
         disableScrollLock={true}
         anchor="left"
@@ -101,7 +108,7 @@ function Navbar() {
               onClick={handleDrawerClose}
               className="navmob__link"
             >
-              Speakers
+              Benefits
             </NavLink>
             <NavLink
               data-aos="fade-right"
@@ -110,7 +117,7 @@ function Navbar() {
               onClick={handleDrawerClose}
               className="navmob__link"
             >
-              Panelists
+              Rewards
             </NavLink>
             <NavLink
               data-aos="fade-right"
@@ -119,7 +126,7 @@ function Navbar() {
               onClick={handleDrawerClose}
               className="navmob__link"
             >
-              Schedule
+              FAQ
             </NavLink>
             <NavLink
               data-aos="fade-right"
@@ -128,7 +135,7 @@ function Navbar() {
               onClick={handleDrawerClose}
               className="navmob__link"
             >
-              Contacts Us
+              Contacts
             </NavLink>
           </div>
         </div>

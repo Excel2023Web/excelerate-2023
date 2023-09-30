@@ -31,6 +31,7 @@
 }
 
 .item {
+    cursor: pointer;
     margin-bottom: 5px;
     padding: 10px 20px;
     background-color: #191617;
@@ -65,6 +66,9 @@
 .content.show {
     height: auto;
     max-height: 999px;
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: var(--primary-font);
     transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 

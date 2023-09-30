@@ -10,7 +10,7 @@ function WhatsExcel() {
     Aos.init({ duration: 1100 });
   }, []);
   return (
-    <div className="Whatexcel__continaer">
+    <div className="Whatexcel__continaer" id="about">
       <div className="whatexcel__heading">
         <img src={titleVectorLeft} alt="" />
         <h1 data-aos="fade-up">What is EXCEL</h1>

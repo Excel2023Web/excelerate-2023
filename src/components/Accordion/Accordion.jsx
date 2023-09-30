@@ -20,7 +20,7 @@ const Accordion = () => {
   };
 
   return (
-    <div className="faq__section">
+    <div className="faq__section" id="faq">
       <div data-aos="zoom-in" aos-delay="200" className="section__title">
         <img src={titleVectorLeft} alt="" />
         <h1>FAQ</h1>

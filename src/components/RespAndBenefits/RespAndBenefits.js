@@ -8,7 +8,7 @@ function RespAndBenefits() {
     Aos.init({duration:700})
   },[])
   return (
-    <div className="resp__bene__container">
+    <div className="resp__bene__container" id="benefits">
       <div className="responsibilit__container">
         <div className="responsibilit__heading">
           <div className="resp__upper__heading">

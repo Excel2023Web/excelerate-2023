@@ -38,7 +38,7 @@ function Landing() {
   };
 
   return (
-    <div className="landing__container">
+    <div className="landing__container" id="home">
        <PhoneNoDialog open={open} handleClose={handleClose} />
       <div className="landing__container_up">
         <img data-aos="zoom-in" className="landing__left__section" src={landing} alt="" />

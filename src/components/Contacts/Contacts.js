@@ -10,7 +10,7 @@ const Contacts = () => {
     Aos.init({ duration: 1100 });
   },[]);
   return (
-    <div className="contacts__main">
+    <div className="contacts__main" id="contacts">
       <div data-aos="zoom-in" aos-delay="200" className="section__title">
         <img src={titleVectorLeft} alt="" />
         <h1>CONTACTS</h1>

@@ -10,6 +10,13 @@
   font-family: var(--primary-font);
   font-size: 1rem;
 }
+.heart_icon {
+  width: 1rem;
+  height: 1rem;
+  margin-bottom: -0.15rem;
+  pointer-events: none;
+}
+
 .mec___logo_footer {
   width: 9rem;
 }
@@ -27,6 +34,10 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+}
+.footer_social_logos>a{
+  color: #ffff;
+  font-size: 1rem;
 }
 @media screen and (max-width: 680px) {
   .footer__main {

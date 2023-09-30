@@ -3,19 +3,49 @@ import "./Footer.css";
 import mec_logo from "../../assets/png/mec_logo.png";
 import excel_logo from "../../assets/png/excelLogoWithText.png";
 import { AiOutlineInstagram } from "react-icons/ai";
-import { FiTwitter, FiLinkedin, FiFacebook } from "react-icons/fi";
+import { FiLinkedin, FiFacebook } from "react-icons/fi";
+import { RiTwitterXFill } from "react-icons/ri";
+import heart from "../../assets/svg/heart.svg";
 const Footer = () => {
   return (
     <div className="footer__main">
       <img src={mec_logo} className="mec___logo_footer" alt="" />
       <div className="footer_content">
         <div className="footer_social_logos">
-          <AiOutlineInstagram />
-          <FiTwitter />
-          <FiLinkedin />
-          <FiFacebook/>
+          <a
+            href="https://www.instagram.com/excelmec/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <AiOutlineInstagram />
+          </a>
+          <a
+            href="https://twitter.com/excelmec"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <RiTwitterXFill />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/excelmec/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            <FiLinkedin />
+          </a>
+          <a
+            href="https://www.facebook.com/excelmec"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FiFacebook />
+          </a>
         </div>
-        <p>Made with ❤️ Excel 2023</p>
+        <p>
+          Made with <img className="heart_icon" src={heart} alt=" " /> Excel
+          2023
+        </p>
       </div>
       <img src={excel_logo} className="excel__logo_footer" alt="" />
     </div>
