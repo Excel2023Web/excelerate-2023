@@ -4,6 +4,7 @@ import titleVectorLeft from "../../assets/svg/title_vector_left.svg";
 import titleVecotrRight from "../../assets/svg/title__vector_right.svg";
 import ContactCard from "./ContactCard";
 import Aos from "aos";
+import { contactsData } from "../../data/contacts";
 const Contacts = () => {
   useEffect(() => {
     Aos.init({ duration: 1100 });
@@ -16,12 +17,11 @@ const Contacts = () => {
         <img src={titleVecotrRight} alt="" />
       </div>
       <div className="contacts__cards_container">
-        <ContactCard />
-        <ContactCard />
-        <ContactCard />
-        <ContactCard />
-        <ContactCard />
-        <ContactCard />
+        {contactsData.map((contact,index)=>{
+          return (
+            <ContactCard key={index} contact={contact}/>
+          )
+        })}
       </div>
     </div>
   );

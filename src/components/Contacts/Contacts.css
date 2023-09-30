@@ -45,6 +45,7 @@
     height: 80%;
     display: flex;
     width: 100%;
+    font-family: var(--primary-font);
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
@@ -62,6 +63,7 @@
 
 .ctct__name {
     color: #ffff;
+    font-family: var(--primary-font);
     font-weight: 700;
 }
 
