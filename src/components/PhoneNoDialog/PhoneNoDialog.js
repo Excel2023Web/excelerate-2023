@@ -45,7 +45,7 @@ const PhoneNoDialog = ({ open, handleClose }) => {
         disableScrollLock={true}
         maxWidth={"md"}
         PaperProps={{
-          sx: { width: "100%", borderRadius: 5, m: 2 },
+          sx: { width: "60%", borderRadius: 5, m: 2 ,overflow:"hidden"},
         }}
         open={open}
         onClose={handleClose}

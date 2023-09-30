@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { useScreenWidth } from "../../hooks/useScreenWidth";
+// import { useScreenWidth } from "../../hooks/useScreenWidth";
 import "./Landing.css";
 import landing from "../../assets/landing.svg";
 import CountUp from "react-countup";
@@ -11,7 +11,7 @@ import IsAuthRender from "../IsAuthRender/IsAuthRender";
 import { UserContext } from "../../contexts/UserContext";
 function Landing() {
   const [open, setOpen] = useState(false);
-  const size = useScreenWidth();
+
 
   const { referrelId, isAmbassador } = useContext(UserContext);
 
@@ -35,6 +35,7 @@ function Landing() {
 
   return (
     <div className="landing__container">
+       <PhoneNoDialog open={open} handleClose={handleClose} />
       <div className="landing__container_up">
         <img className="landing__left__section" src={landing} alt="" />
         <div className="landing__right__section">
