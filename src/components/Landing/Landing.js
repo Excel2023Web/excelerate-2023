@@ -11,12 +11,15 @@ import IsAuthRender from "../IsAuthRender/IsAuthRender";
 import { UserContext } from "../../contexts/UserContext";
 import Bubbles from "../Bubbles/Bubbles";
 import Aos from "aos";
+import Scroller from "../Scroller/Scroller";
+import { useScreenWidth } from "../../hooks/useScreenWidth";
+
 function Landing() {
   useEffect(() => {
     Aos.init({ duration: 1100 });
   }, []);
   const [open, setOpen] = useState(false);
-
+  const size = useScreenWidth();
   const { referrelId, isAmbassador } = useContext(UserContext);
 
   const handleClose = () => {
@@ -48,8 +51,11 @@ function Landing() {
           alt=""
         />
         <div className="landing__right__section">
+          {size < 900 ? <Scroller /> : null}
+
           <h1 data-aos="zoom-in">Excelerate </h1>
           {/* <button className="reg__btn" onClick={onLoginClick}>Register</button> */}
+
           {AccountHandler.isUserLoggedIn() ? (
             <div>
               {AccountHandler.isUserLoggedIn() ? (
