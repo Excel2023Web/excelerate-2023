@@ -12,7 +12,7 @@ const Navbar = () => {
         className="nav__outside_logo"
         src={excelLogo}
         onClick={() => {
-          window.location.reload();
+          window.open('https://excelmec.org');
         }}
         alt="excelLogo"
       />

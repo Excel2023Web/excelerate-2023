@@ -53,7 +53,7 @@ function Landing() {
         <div className="landing__right__section">
           {size < 900 ? <Scroller /> : null}
 
-          <h1 data-aos="zoom-in">Excelerate </h1>
+          <h1>Excelerate </h1>
           {/* <button className="reg__btn" onClick={onLoginClick}>Register</button> */}
 
           {AccountHandler.isUserLoggedIn() ? (
