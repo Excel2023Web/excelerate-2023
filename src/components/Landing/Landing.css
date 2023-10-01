@@ -40,10 +40,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.8rem;
+    padding: 1rem;
     font-family: var(--primary-font);
-    width: 220px;
-    height: 60px;
+    /* width: 220px;
+    height: 60px; */
     font-size: 1.2rem;
     font-weight: 400;
     letter-spacing: 0.05em;
@@ -112,10 +112,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.4rem;
+    padding: 1rem;
     font-family: var(--primary-font);
-    width: 220px;
-    height: 60px;
     font-size: 1.2rem;
     border: none;
     font-weight: 400;
@@ -167,7 +165,14 @@
     transform: translateY(-150%);
 }
 
-@media only screen and (max-width: 1300px) {}
+@media only screen and (max-width: 1300px) {
+    .reg__btn,
+    .amb_btn {
+        /* width: 190px; */
+        height: 4rem;
+        width: 13rem;
+    }
+}
 
 @media (min-device-width: 20px) and (max-device-width: 500px) {}
 
@@ -186,11 +191,17 @@
     .landing__right__section {
         font-size: 1.3rem;
     }
-    .reg__btn {
-        width: 190px;
+    .landing__right__section {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
     }
-    .landing__left__section {
-        width: 28rem;
+    .btn__container {
+        gap: .4rem;
+        padding: 1rem;
+    }
+    .landing__container_up {
+        gap: 0rem;
     }
 }
 
@@ -204,7 +215,11 @@
         justify-content: center;
         align-items: center;
         /* background: red; */
-        margin: auto;
+        /* margin: auto; */
+    }
+    .btn__container {
+        justify-content: center;
+        gap: 3rem;
     }
 }
 
@@ -229,12 +244,9 @@
         font-size: 1.2rem;
         transform: translateY(-190%);
     }
-    .reg__btn {
-        width: 150px;
-        font-size: 1rem;
-    }
-    .reg__btn::before {
-        /* width: 150px; */
+    .reg__btn,
+    .amb_btn {
+        width: 15rem;
     }
 }
 
@@ -246,11 +258,22 @@
     .reg__btn {
         font-size: 1rem;
     }
+    .btn__container {
+        display: flex;
+        flex-direction: column;
+    }
+    .reg__btn,
+    .amb_btn {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 381px) {
     .landing__right__section {
         font-size: 0.8rem;
+    }
+    .btn__container {
+        gap: 0rem;
     }
 }
 
