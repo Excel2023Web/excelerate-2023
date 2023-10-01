@@ -1,147 +1,74 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
-import Drawer from "@mui/material/Drawer";
-import { IoMenu, IoClose } from "react-icons/io5";
-import { Link as NavLink } from "react-scroll";
-import { useScrollPosition } from "../../hooks/useScrollPosition";
-import excel_logo from "../../assets/png/excelLogoWithText.png";
-
 import "./Navbar.css";
-
-function Navbar() {
-  const [drawer, setDrawer] = useState(false);
-  let scrollPosition = useScrollPosition();
-  const handleDrawerOpen = () => {
-    setDrawer(true);
-  };
-
-  const handleDrawerClose = () => {
-    setDrawer(false);
-  };
-
-  const location = useLocation();
-
-  const notHome = location.pathname.length > 1 ? true : false;
-
-  const navStyleHome = {
-    background: scrollPosition > 300 ? "#111111" : "rgba(17, 17, 17, 0.1)",
-    boxShadow:
-      scrollPosition > 200 ? "0px 2px 9px rgba(0, 0, 0, 0.11)" : "none",
-    backdropFilter: "blur(10px)",
-  };
-  const navStyle = {
-    background: scrollPosition > 300 ? "#111111" : "#111111",
-    boxShadow:
-      scrollPosition > 200 ? "0px 2px 9px rgba(0, 0, 0, 0.11)" : "none",
-    backdropFilter: "none",
-  };
+import excelLogo from "../../assets/png/excelLogo.png";
+import { Link as NavLink } from "react-scroll";
+const Navbar = () => {
+  const [checked, setChecked] = useState(false);
+  const handleClick = () => setChecked(!checked);
 
   return (
-    <div className="navbar" style={notHome ? navStyle : navStyleHome}>
-      <div className="navbar__main container">
-        <div className="nav__logo">
-          <NavLink>
-            <img className="nav__logo__img" src={excel_logo} alt="" />
-          </NavLink>
+    <div className="nav__main_container">
+      <img
+        className="nav__outside_logo"
+        src={excelLogo}
+        onClick={() => {
+          window.location.reload();
+        }}
+        alt="excelLogo"
+      />
+      <div className="menu-wrap">
+        {/* onChange={e => {}} is added to avoid an error msg in the console: ' You provided a `checked` prop to a form field without ........' */}
+        <input
+          type="checkbox"
+          className="toggler"
+          onClick={handleClick}
+          checked={checked}
+          onChange={(e) => {}}
+        />
+        <div className="hamburger">
+          <div></div>
         </div>
-        <div className="nav_contents">
-          <NavLink to="home" smooth={true} className="nav__link">
-            Home
-          </NavLink>
-          <NavLink to="about" smooth={true} className="nav__link">
-            About
-          </NavLink>
-          <NavLink to="benefits" smooth={true} className="nav__link">
-            Benefits
-          </NavLink>
-          <NavLink to="rewards" smooth={true} className="nav__link">
-            Rewards
-          </NavLink>
-          <NavLink to="faq" smooth={true} className="nav__link">
-            FAQ
-          </NavLink>
-          <NavLink to="contacts" smooth={true} className="nav__link">
-            Contacts
-          </NavLink>
-        </div>
-        <div className="nav_hamburger" onClick={handleDrawerOpen}>
-          <IoMenu className="nam_menu_icon" />
+        <div className="menu">
+          <div>
+            <div>
+              <ul style={{ padding: "0" }} className="overlay-content pt-2">
+                <li onClick={handleClick}>
+                  <NavLink to="home" smooth={true} onClick={handleClick}>
+                    HOME
+                  </NavLink>
+                </li>
+                <li onClick={handleClick}>
+                  <NavLink to="about" smooth={true} onClick={handleClick}>
+                    ABOUT
+                  </NavLink>
+                </li>
+                <li onClick={handleClick}>
+                  <NavLink to="benefits" smooth={true} onClick={handleClick}>
+                    BENEFITS
+                  </NavLink>
+                </li>
+                <li onClick={handleClick}>
+                  <NavLink to="rewards" smooth={true} onClick={handleClick}>
+                    REWARDS
+                  </NavLink>
+                </li>
+                <li onClick={handleClick}>
+                  <NavLink to="faq" smooth={true} onClick={handleClick}>
+                    FAQ
+                  </NavLink>
+                </li>
+                <li onClick={handleClick}>
+                  <NavLink to="contacts" smooth={true} onClick={handleClick}>
+                    CONTACTS
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-      <Drawer
-        disableScrollLock={true}
-        anchor="left"
-        open={drawer}
-        onClose={handleDrawerClose}
-        sx={{
-          borderRadius: 20,
-          width: "90%",
-        }}
-      >
-        <div className="navbar__mob">
-          <div className="navbar_mob_close" onClick={handleDrawerClose}>
-            <IoClose />
-          </div>
-          <div className="navbar__mobcontents">
-            <NavLink
-              data-aos="fade-right"
-              data-aos-duration="200"
-              to="/#home"
-              onClick={handleDrawerClose}
-              className="navmob__link"
-            >
-              Home
-            </NavLink>
-            <NavLink
-              data-aos="fade-right"
-              data-aos-duration="400"
-              to="/#about"
-              onClick={handleDrawerClose}
-              className="navmob__link"
-            >
-              About
-            </NavLink>
-            <NavLink
-              data-aos="fade-right"
-              data-aos-duration="600"
-              to="/#speakers"
-              onClick={handleDrawerClose}
-              className="navmob__link"
-            >
-              Benefits
-            </NavLink>
-            <NavLink
-              data-aos="fade-right"
-              data-aos-duration="800"
-              to="/#panelists"
-              onClick={handleDrawerClose}
-              className="navmob__link"
-            >
-              Rewards
-            </NavLink>
-            <NavLink
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              to="/#schedule"
-              onClick={handleDrawerClose}
-              className="navmob__link"
-            >
-              FAQ
-            </NavLink>
-            <NavLink
-              data-aos="fade-right"
-              data-aos-duration="1400"
-              to="/#contact"
-              onClick={handleDrawerClose}
-              className="navmob__link"
-            >
-              Contacts
-            </NavLink>
-          </div>
-        </div>
-      </Drawer>
     </div>
   );
-}
+};
 
 export default Navbar;
