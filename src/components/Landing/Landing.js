@@ -9,13 +9,13 @@ import AccountHandler from "../../auth/accountHandler";
 import PhoneNoDialog from "../PhoneNoDialog/PhoneNoDialog";
 import IsAuthRender from "../IsAuthRender/IsAuthRender";
 import { UserContext } from "../../contexts/UserContext";
+import Bubbles from "../Bubbles/Bubbles";
 import Aos from "aos";
 function Landing() {
-  useEffect(()=>{
-    Aos.init({duration:1100})
-  },[])
+  useEffect(() => {
+    Aos.init({ duration: 1100 });
+  }, []);
   const [open, setOpen] = useState(false);
-
 
   const { referrelId, isAmbassador } = useContext(UserContext);
 
@@ -39,43 +39,48 @@ function Landing() {
 
   return (
     <div className="landing__container" id="home">
-       <PhoneNoDialog open={open} handleClose={handleClose} />
+      <PhoneNoDialog open={open} handleClose={handleClose} />
       <div className="landing__container_up">
-        <img data-aos="zoom-in" className="landing__left__section" src={landing} alt="" />
+        <img
+          data-aos="zoom-in"
+          className="landing__left__section"
+          src={landing}
+          alt=""
+        />
         <div className="landing__right__section">
           <h1 data-aos="zoom-in">Excelerate </h1>
           {/* <button className="reg__btn" onClick={onLoginClick}>Register</button> */}
           {AccountHandler.isUserLoggedIn() ? (
             <div>
               {AccountHandler.isUserLoggedIn() ? (
-        <div>
-          {isAmbassador ? (
-            <IsAuthRender
-              state={2}
-              referrelId={referrelId}
-              open={open}
-              setOpen={setOpen}
-              onLoginClick={onLoginClick}
-            />
-          ) : (
-            <IsAuthRender
-              state={1}
-              referrelId={referrelId}
-              open={open}
-              setOpen={setOpen}
-              onLoginClick={onLoginClick}
-            />
-          )}
-        </div>
-      ) : (
-        <IsAuthRender
-          state={3}
-          referrelId={referrelId}
-          open={open}
-          setOpen={setOpen}
-          onLoginClick={onLoginClick}
-        />
-      )}
+                <div>
+                  {isAmbassador ? (
+                    <IsAuthRender
+                      state={2}
+                      referrelId={referrelId}
+                      open={open}
+                      setOpen={setOpen}
+                      onLoginClick={onLoginClick}
+                    />
+                  ) : (
+                    <IsAuthRender
+                      state={1}
+                      referrelId={referrelId}
+                      open={open}
+                      setOpen={setOpen}
+                      onLoginClick={onLoginClick}
+                    />
+                  )}
+                </div>
+              ) : (
+                <IsAuthRender
+                  state={3}
+                  referrelId={referrelId}
+                  open={open}
+                  setOpen={setOpen}
+                  onLoginClick={onLoginClick}
+                />
+              )}
             </div>
           ) : (
             <IsAuthRender
@@ -102,11 +107,15 @@ function Landing() {
               k
             </h1>
           </div>
-          <div data-aos="fade-up" aos-delay="100" className="landing__card__content">
+          <div
+            data-aos="fade-up"
+            aos-delay="100"
+            className="landing__card__content"
+          >
             <h4>FootFall</h4>
           </div>
         </div>
-        <div data-aos="fade-up"aos-delay="200" className="landing__card">
+        <div data-aos="fade-up" aos-delay="200" className="landing__card">
           <div className="landing__card__heading">
             <h1>
               <CountUp
@@ -118,7 +127,11 @@ function Landing() {
               k
             </h1>
           </div>
-          <div data-aos="fade-up" aos-delay="400" className="landing__card__content">
+          <div
+            data-aos="fade-up"
+            aos-delay="400"
+            className="landing__card__content"
+          >
             <h4>Events</h4>
           </div>
         </div>
@@ -134,11 +147,16 @@ function Landing() {
               k
             </h1>
           </div>
-          <div data-aos="fade-up" aos-delay="800" className="landing__card__content">
+          <div
+            data-aos="fade-up"
+            aos-delay="800"
+            className="landing__card__content"
+          >
             <h4>Prize Pool</h4>
           </div>
         </div>
       </div>
+      <Bubbles />
     </div>
   );
 }
