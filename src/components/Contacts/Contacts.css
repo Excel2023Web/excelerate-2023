@@ -17,9 +17,10 @@
     padding: 2rem;
 }
 
-.ctct__icons >a{
+.ctct__icons>a {
     color: #f74670;
 }
+
 .contact__card_main {
     width: 15rem;
     height: 25rem;
@@ -118,6 +119,6 @@
 
 @media screen and (max-width: 400px) {}
 
-@media only screen and (min-device-width: 320px) and (max-device-width : 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {}
 
 @media only screen and (device-width: 768px) {}

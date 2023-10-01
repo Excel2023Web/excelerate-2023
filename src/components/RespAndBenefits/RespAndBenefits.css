@@ -53,9 +53,9 @@
 
 .resp___points li {
     color: white;
-    line-height: 2.5rem;
-    font-weight: 500;
     font-size: 1.2rem;
+    line-height: 30px;
+    font-weight: 500;
 }
 
 @media only screen and (max-width: 1300px) {}
@@ -89,7 +89,7 @@
 
 @media screen and (max-width: 800px) {
     .resp__second__heading {
-        font-size: rem;
+        font-size: 1.3rem;
     }
     .resp__upper__heading img {
         width: 20%;
@@ -98,7 +98,7 @@
         font-size: 2rem;
     }
     .resp___points li {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 

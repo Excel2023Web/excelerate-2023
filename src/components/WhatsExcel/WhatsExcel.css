@@ -1,4 +1,4 @@
-.Whatexcel__continaer{
+.Whatexcel__continaer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,15 +9,16 @@
     opacity: 0.8;
 }
 
-.whats_excel_content{
+.whats_excel_content {
     color: white;
     width: 60%;
     font-family: var(--primary-font);
     font-size: 1.2rem;
     line-height: 30px;
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
 }
+
 .whatexcel__top,
 .whatexcel__heading {
     width: 100%;
@@ -38,6 +39,7 @@
     color: var(--secondaryColor);
 }
 
+
 /* .whatexcel__para {
     width: 80%;
     margin: auto;
@@ -46,6 +48,7 @@
     text-align: center;
     line-height: 1.7rem;
 } */
+
 
 /* .whats__slider {
     width: 80%;
@@ -62,6 +65,7 @@
     align-items: center;
 } */
 
+
 /* .whatexcel__carosul__img {
     width: 50%;
     height: 25rem;
@@ -76,8 +80,7 @@
     justify-content: center;
     text-align: center;
     gap: 1rem;
-
-  }
+}
 
 .panelist__caroussel__img {
     width: 50%;
@@ -87,25 +90,25 @@
     flex-direction: column;
 }
 
-.slider__img{
+.slider__img {
     pointer-events: none;
     border-radius: 20px !important;
     width: 30rem;
-    height:20rem;
+    height: 20rem;
 }
 
-.slide img{
-    width:20rem;
+.slide img {
+    width: 20rem;
     margin: 0 auto;
 }
 
-.slide{
+.slide {
     transform: scale(0.7);
     transition: transform 300ms;
     opacity: 0.5;
 }
 
-.activeSlide{
+.activeSlide {
     transform: scale(1.1);
     opacity: 1;
 }
@@ -118,6 +121,7 @@
     padding-top: 3rem;
     align-items: center;
 }
+
 
 /* .whatexcel__carosul__btn {
     width: 3.5rem;
@@ -142,9 +146,9 @@
         font-size: 2rem;
     }
     .slider__img {
-        width:25rem;
+        width: 25rem;
         height: 20rem;
-      }
+    }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -152,11 +156,10 @@
         width: 50%;
         height: 20rem;
     }
-    
     .slider__img {
-      width:30rem;
-      height: 20rem;
-      padding-top: 3rem;
+        width: 30rem;
+        height: 20rem;
+        padding-top: 3rem;
     }
 }
 
@@ -172,10 +175,12 @@
         width: 25%;
     }
     .slider__img {
-        width:30rem;
+        width: 30rem;
         height: 20rem;
-      }
-  
+    }
+    .whats_excel_content {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -188,11 +193,11 @@
     .whatexcel__para {
         font-size: 1rem;
     }
-    .slider__img{
+    .slider__img {
         width: 25rem;
-        height:20rem;
+        height: 20rem;
         padding-top: 2rem;
-      }
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -202,37 +207,38 @@
     .reward__right__top {
         flex-direction: column;
     }
-    .slider__img{
+    .slider__img {
         width: 23rem;
-        height:18rem;
+        height: 18rem;
         padding-top: 2rem;
-      }
+    }
 }
 
 @media screen and (max-width: 550px) {
-    .slider__img{
+    .slider__img {
         width: 21.5rem;
-        height:18rem;
+        height: 18rem;
         padding-top: 2rem;
-      }
+    }
 }
+
 @media screen and (max-width:525px) {
     .slider__img {
         width: 19rem;
         height: 16rem;
         padding-top: 1rem;
     }
-  }
+}
 
-  @media only screen and (device-width: 450px) {
-    .slider__img{
+@media only screen and (device-width: 450px) {
+    .slider__img {
         width: 17rem;
-        height:12rem;
-      }
-  }
+        height: 12rem;
+    }
+}
 
 @media screen and (max-width:360px) {
-    .slider__img{
+    .slider__img {
         width: 16rem;
         height: 12rem;
     }
