@@ -42,10 +42,9 @@
     line-height: normal;
 }
 .selected{
-   
     background-color: #F746701A;
-    
-    
+    font-size: 1rem;
+    font-weight: 300;
 }
 .title {
     display: flex;
@@ -58,18 +57,22 @@
 }
 
 .content {
+    font-family: var(--primary-font);
     max-height: 0;
     overflow: hidden;
-    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+    font-size: 1rem;
+    opacity: 0;
+    font-weight: 300;
+    transition: all 0.5s cubic-bezier(0, 1, 0, 1), opacity 0.5s ease, font-size 0.5s ease, font-weight 1.5s ease;
 }
 
 .content.show {
-    height: auto;
     max-height: 999px;
+    opacity: 1;
     font-size: 1rem;
     font-weight: 300;
     font-family: var(--primary-font);
-    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+    transition: all 0.5s cubic-bezier(1, 0, 1, 0),opacity 0.5s ease,font-size 0.5s  ease, font-weight 1.5s ease;
 }
 
 .faqimgimg{
