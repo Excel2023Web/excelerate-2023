@@ -1,9 +1,22 @@
 import React, { useState } from "react";
 import { FiCopy, FiCheck } from "react-icons/fi";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import axios from "axios";
+import { accountBackendUrl } from "../../utils/urls";
 
 const IsAuthRender = ({ state, open, setOpen, onLoginClick, referrelId }) => {
   const [copied, setCopied] = useState(false);
+
+  const handleRegistration = async () => {
+    const accessToken = window.localStorage.getItem("accessToken");
+    const res = await axios.get(`${accountBackendUrl}/api/Ambassador/signup`, {
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+      },
+    });
+    console.log(res);
+  };
+
   if (state === 1) {
     //logged in + not amba
     return (
@@ -14,7 +27,8 @@ const IsAuthRender = ({ state, open, setOpen, onLoginClick, referrelId }) => {
         <button
           className="amb_btn"
           onClick={() => {
-            setOpen(true);
+            // setOpen(true);
+            handleRegistration();
           }}
         >
           Become Ambassador
@@ -42,6 +56,7 @@ const IsAuthRender = ({ state, open, setOpen, onLoginClick, referrelId }) => {
             display: "flex",
             justifyContent: "space-between",
             padding: "1rem",
+            gap: "1rem",
           }}
         >
           <div>

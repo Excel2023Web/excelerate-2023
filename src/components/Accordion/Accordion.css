@@ -1,104 +1,114 @@
 .faq__main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--primary-font);
 }
 
 .wrapper {
-    display: flex;
-    /* height: 700px; */
-    width: 80%;
-    margin: 1rem auto;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  /* height: 700px; */
+  width: 80%;
+  margin: 1rem auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .accordion {
-    width: 850px;
-    font-family: "Montserrat-SemiBold", Helvetica;
-    font-size: 1.2rem;
-    font-weight: 600;
-    /* left: 0; */
-    letter-spacing: 0;
-    line-height: normal;
-    /* top: 0; */
+  width: 850px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  /* left: 0; */
+  letter-spacing: 0;
+  line-height: normal;
+  font-family: var(--primary-font);
+
+  /* top: 0; */
 }
 
 .title h2 {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .item {
-    cursor: pointer;
-    margin-bottom: 5px;
-    padding: 10px 20px;
-    background-color: #191617;
-    border-radius: 8px;
-    box-shadow: -4px -4px 8px #c95b7540, 0px 4px 4px #000000;
-    color: #ffffff;
-    font-family: "Montserrat-Regular", Helvetica;
-    line-height: normal;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  padding: 10px 20px;
+  background-color: #191617;
+  border-radius: 8px;
+  box-shadow: -4px -4px 8px #c95b7540, 0px 4px 4px #000000;
+  color: #ffffff;
+  line-height: normal;
 }
-.selected{
-   
-    background-color: #F746701A;
-    
-    
+.selected {
+  background-color: #f746701a;
 }
 .title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .title img {
-    height: .8rem;
+  height: 0.8rem;
 }
 
 .content {
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .content.show {
-    height: auto;
-    max-height: 999px;
-    font-size: 1rem;
-    font-weight: 300;
-    font-family: var(--primary-font);
-    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+  height: auto;
+  max-height: 999px;
+  padding-bottom: 15px;
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: var(--primary-font);
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 
-.faqimgimg{
-    height: 21rem;
+.faqimgimg {
+  height: 21rem;
 }
 
-@media only screen and (max-width: 1300px) {}
+@media only screen and (max-width: 1300px) {
+}
 
-@media (min-device-width: 20px) and (max-device-width: 500px) {}
+@media (min-device-width: 20px) and (max-device-width: 500px) {
+}
 
-@media only screen and (max-width: 1200px) {}
+@media only screen and (max-width: 1200px) {
+}
 
-@media only screen and (max-width: 1100px) {}
+@media only screen and (max-width: 1100px) {
+}
 
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+}
 
 @media screen and (max-width: 800px) {
-    .wrapper{
-        flex-direction: column-reverse;
-    }
-    .accordion{
-        width: auto;
-    }
+  .wrapper {
+    flex-direction: column-reverse;
+  }
+  .accordion {
+    width: auto;
+  }
 }
 
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 600px) {
+}
 
-@media screen and (max-width: 400px) {}
+@media screen and (max-width: 400px) {
+}
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+}
 
-@media only screen and (device-width: 768px) {}
+@media only screen and (device-width: 768px) {
+}

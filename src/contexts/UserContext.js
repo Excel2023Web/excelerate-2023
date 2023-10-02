@@ -3,7 +3,7 @@ import axios from "axios";
 import React, { useEffect } from "react";
 import { createContext } from "react";
 import AuthHandler from "../auth/authHandler";
-import { accountBackendUrl, caBaseUrl } from "../utils/urls";
+import { accountBackendUrl } from "../utils/urls";
 
 export const UserContext = createContext();
 
@@ -15,35 +15,37 @@ function UserDetails(props) {
 
   const getExcelId = async (access_token) => {
     await axios
-      .get(`${accountBackendUrl}/Profile`, {
+      .get(`${accountBackendUrl}/api/Profile`, {
         headers: {
           Authorization: `Bearer ${access_token}`,
         },
       })
       .then((response) => {
         setExcelId(response.data.id);
+        if (response.data.ambassador) {
+          setIsAmbassador(true);
+          setReferrelId(response.data.ambassador.id);
+        }
         return response.data.id;
       });
   };
 
-  useEffect(() => {
-    axios.get(`${caBaseUrl}/ambassador`).then(
-      (response) => {
-        if (response.data) {
-          if (response.data.find((item) => item.excelId === excelId)) {
-            setIsAmbassador(true);
-            setReferrelId(excelId);
-            // setReferrelId(response.data);
-          } else {
-            setIsAmbassador(false);
-          }
-        }
-      },
-      (error) => {
-        // console.log(error);
-      }
-    );
-  }, [excelId]);
+  // useEffect(() => {
+  //   axios.get(`${caBaseUrl}/ambassador`).then(
+  //     (response) => {
+  //       if (response.data) {
+  //         if (response.data.find((item) => item.excelId === excelId)) {
+  //           setIsAmbassador(true);
+  //           setReferrelId(excelId);
+  //         } else {
+  //           setIsAmbassador(false);
+  //         }
+  //       }
+  //     },
+  //     (error) => {
+  //     }
+  //   );
+  // }, [excelId]);
 
   useEffect(() => {
     if (localStorage.getItem("refreshToken")) {
