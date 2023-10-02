@@ -2,117 +2,145 @@
 .responsibilit__container,
 .responsibilit__heading,
 .resposibility__points {
-    width: 100%;
-    font-family: var(--primary-font);
+  width: 100%;
+  font-family: var(--primary-font);
 }
 
 .responsibilit__container {
-    margin: 2rem 0rem 6rem 0rem;
+  margin: 2rem 0rem 6rem 0rem;
 }
 
 .responsibilit__heading {
-    display: flex;
-    /* background-color: red; */
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0px;
+  display: flex;
+  /* background-color: red; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
 }
 
 .resp__upper__heading {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .resp__upper__heading h1 {
-    font-weight: bold;
-    font-size: 3rem;
-    font-family: var(--primary-font);
-    color: var(--secondaryColor);
-    margin: 0px;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: var(--primary-font);
+  color: var(--secondaryColor);
+  margin: 0px;
 }
 
 .resp__second__heading {
-    color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
 }
 
 .resposibility__points {
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
 }
 
 .resp___points li::marker {
-    color: var(--secondaryColor);
+  color: var(--secondaryColor);
 }
 
 .resp___points li {
-    color: white;
-    font-size: 1.2rem;
-    line-height: 30px;
-    font-weight: 500;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 30px;
+  font-weight: 500;
 }
 
-@media only screen and (max-width: 1300px) {}
+.benefits__left__top {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
 
-@media (min-device-width: 20px) and (max-device-width: 500px) {}
+.benefits__left__bottom {
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+}
+
+.benefits__right__top {
+  position: absolute;
+  right: 0px;
+}
+
+.benefits__right__bottom {
+  position: absolute;
+  right: 0px;
+}
+
+@media only screen and (max-width: 1300px) {
+}
+
+@media (min-device-width: 20px) and (max-device-width: 500px) {
+}
 
 @media only screen and (max-width: 1200px) {
-    .resp__bene__container {
-        width: 80%;
-        margin: auto;
-    }
+  .resp__bene__container {
+    width: 80%;
+    margin: auto;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
-    .resp__bene__container {
-        width: 80%;
-        margin: auto;
-    }
-    .resp__upper__heading h1 {
-        font-size: 2rem;
-    }
-    .resp__upper__heading img {
-        width: 25%;
-    }
-    .resp__upper__heading {
-        font-size: 1.2rem;
-    }
+  .resp__bene__container {
+    width: 80%;
+    margin: auto;
+  }
+  .resp__upper__heading h1 {
+    font-size: 2rem;
+  }
+  .resp__upper__heading img {
+    width: 25%;
+  }
+  .resp__upper__heading {
+    font-size: 1.2rem;
+  }
 }
 
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+}
 
 @media screen and (max-width: 800px) {
-    .resp__second__heading {
-        font-size: 1.3rem;
-    }
-    .resp__upper__heading img {
-        width: 20%;
-    }
-    .resp__upper__heading h1 {
-        font-size: 2rem;
-    }
-    .resp___points li {
-        font-size: 1.2rem;
-    }
+  .resp__second__heading {
+    font-size: 1.3rem;
+  }
+  .resp__upper__heading img {
+    width: 20%;
+  }
+  .resp__upper__heading h1 {
+    font-size: 2rem;
+  }
+  .resp___points li {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .resp__upper__heading img {
-        display: none;
-    }
-    .reward__left {
-        margin: 2rem;
-    }
+  .resp__upper__heading img {
+    display: none;
+  }
+  .reward__left {
+    margin: 2rem;
+  }
 }
 
-@media screen and (max-width: 400px) {}
+@media screen and (max-width: 400px) {
+}
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+}
 
-@media only screen and (device-width: 768px) {}
+@media only screen and (device-width: 768px) {
+}
