@@ -61,7 +61,7 @@ export default class AuthHandler {
         const refresh_token = this.getRefreshToken();
         if (refresh_token != null) {
             try {
-                let res = await axios.post(`${accountBackendUrl}/auth/refresh`, {
+                let res = await axios.post(`${accountBackendUrl}/api/auth/refresh`, {
                     refreshToken: refresh_token,
                 });
                 if (res.status === 200 && res.data.accessToken !== null && res.data.accessToken.length !== 0) access_token = res.data.accessToken;
