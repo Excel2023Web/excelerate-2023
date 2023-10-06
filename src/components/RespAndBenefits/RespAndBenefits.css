@@ -103,6 +103,7 @@
   }
   .resp__upper__heading img {
     width: 25%;
+    pointer-events: none;
   }
   .resp__upper__heading {
     font-size: 1.2rem;
@@ -118,6 +119,7 @@
   }
   .resp__upper__heading img {
     width: 20%;
+    pointer-events: none;
   }
   .resp__upper__heading h1 {
     font-size: 2rem;
@@ -130,6 +132,7 @@
 @media screen and (max-width: 600px) {
   .resp__upper__heading img {
     display: none;
+    pointer-events: none;
   }
   .reward__left {
     margin: 2rem;

@@ -9,7 +9,10 @@ import heart from "../../assets/svg/heart.svg";
 const Footer = () => {
   return (
     <div className="footer__main">
-      <img src={mec_logo} className="mec___logo_footer" alt="" />
+      <a href="https://www.mec.ac.in/" target="_blank" rel="noreferrer">
+        <img src={mec_logo} className="mec___logo_footer" alt="mec" />
+      </a>
+
       <div className="footer_content">
         <div className="footer_social_logos">
           <a
@@ -47,7 +50,9 @@ const Footer = () => {
           2023
         </p>
       </div>
-      <img src={excel_logo} className="excel__logo_footer" alt="" />
+      <a href="https://www.excelmec.org/" target="_blank" rel="noreferrer">
+        <img src={excel_logo} className="excel__logo_footer" alt="" />
+      </a>
     </div>
   );
 };

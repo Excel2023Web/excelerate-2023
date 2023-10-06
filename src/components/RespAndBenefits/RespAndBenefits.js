@@ -22,7 +22,7 @@ function RespAndBenefits() {
           <div className="responsibilit__heading">
             <div className="resp__upper__heading">
               <img data-aos="zoom-in" src={titleVectorLeft} alt="" />
-              <h1 data-aos="fade-up">Responsibilities</h1>
+              <h1 data-aos="fade-up">RESPONSIBILITIES</h1>
               <img src={titleVecotrRight} alt="" />
             </div>
             <h2 data-aos="fade-up" className="resp__second__heading">
@@ -55,9 +55,9 @@ function RespAndBenefits() {
               aos-delay="200"
               className="resp__upper__heading"
             >
-              <img src={titleVectorLeft} alt="" />
-              <h1>Benefits</h1>
-              <img src={titleVecotrRight} alt="" />
+              <img src={titleVectorLeft} alt="" style={{pointerEvents:"none"}}/>
+              <h1>BENEFITS</h1>
+              <img src={titleVecotrRight} alt="" style={{pointerEvents:"none"}}/>
             </div>
           </div>
           <div className="resposibility__points">
@@ -83,10 +83,11 @@ function RespAndBenefits() {
           </div>
         </div>
       </div>
-      <img src={benefitsLeftBottom} alt="" className="benefits__left__bottom" />
+      <img src={benefitsLeftBottom} alt="" className="benefits__left__bottom"style={{pointerEvents:"none"}} />
       <img
         src={benefitsRightBottom}
         alt=""
+        style={{pointerEvents:"none"}}
         className="benefits__right__bottom"
       />
     </>

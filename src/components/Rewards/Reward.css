@@ -12,6 +12,9 @@
     font-family: var(--secondaryColor);
 }
 
+.section__title>img{
+    pointer-events: none;
+}
 .reward__middle_head {
     color: white;
 }
@@ -121,6 +124,7 @@
     }
     .reward__cards__priz img {
         width: 2rem;
+        pointer-events: none;
     }
 }
 
@@ -133,6 +137,7 @@
     }
     .reward__left img {
         width: 126%;
+        pointer-events: none;
     }
 }
 
@@ -150,6 +155,7 @@
     }
     .section__title img {
         display: none;
+        pointer-events: none;
     }
 }
 

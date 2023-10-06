@@ -11,7 +11,7 @@ const Contacts = () => {
   },[]);
   return (
     <div className="contacts__main" id="contacts">
-      <div data-aos="zoom-in" aos-delay="200" className="section__title">
+      <div data-aos="zoom-in" aos-delay="200" className="resp__upper__heading">
         <img src={titleVectorLeft} alt="" />
         <h1>CONTACTS</h1>
         <img src={titleVecotrRight} alt="" />

@@ -105,7 +105,7 @@ function Landing() {
           <div className="landing__card__heading">
             <h1>
               <CountUp
-                end={40}
+                end={8}
                 duration={2}
                 enableScrollSpy={true}
                 preserveValue={true}
@@ -114,8 +114,6 @@ function Landing() {
             </h1>
           </div>
           <div
-            data-aos="fade-up"
-            aos-delay="100"
             className="landing__card__content"
           >
             <h4>FootFall</h4>
@@ -130,12 +128,10 @@ function Landing() {
                 enableScrollSpy={true}
                 preserveValue={true}
               />
-              k
+              +
             </h1>
           </div>
           <div
-            data-aos="fade-up"
-            aos-delay="400"
             className="landing__card__content"
           >
             <h4>Events</h4>
@@ -145,17 +141,15 @@ function Landing() {
           <div className="landing__card__heading">
             <h1>
               <CountUp
-                end={40}
+                end={4}
                 duration={2}
                 enableScrollSpy={true}
                 preserveValue={true}
               />
-              k
+              L+
             </h1>
           </div>
           <div
-            data-aos="fade-up"
-            aos-delay="800"
             className="landing__card__content"
           >
             <h4>Prize Pool</h4>

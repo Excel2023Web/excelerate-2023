@@ -58,6 +58,7 @@
 }
 
 .ctct_image {
+  pointer-events: none;
   height: 15rem;
   object-fit: cover;
   border-radius: 1rem;
