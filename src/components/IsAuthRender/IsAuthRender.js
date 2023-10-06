@@ -2,19 +2,39 @@ import React, { useState } from "react";
 import { FiCopy, FiCheck } from "react-icons/fi";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import axios from "axios";
-import { accountBackendUrl } from "../../utils/urls";
+import { accountBackendUrl, accountsBaseURL } from "../../utils/urls";
 
 const IsAuthRender = ({ state, open, setOpen, onLoginClick, referrelId }) => {
   const [copied, setCopied] = useState(false);
 
   const handleRegistration = async () => {
     const accessToken = window.localStorage.getItem("accessToken");
-    const res = await axios.get(`${accountBackendUrl}/api/Ambassador/signup`, {
-      headers: {
-        Authorization: `Bearer ${accessToken}`,
-      },
-    });
-    console.log(res);
+    try {
+      const res = await axios.get(`${accountBackendUrl}/api/Ambassador/signup`, {
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+        },
+      });
+      console.log(res);
+    } catch (err) {
+      switch (err.response?.status) {
+        case 200:
+          alert("You are already an ambassador");
+          break;
+        case 469:
+          window.location.href = `${accountsBaseURL}/complete-profile?redirect_to=${window.location}`;
+          break;
+        case 500:
+          alert("Sorry something went wrong. Please try again later");
+          break;
+        default:
+          alert("Sorry something went wrong.");
+          break;
+      }
+      console.log(err);
+    } finally {
+
+    }
   };
 
   if (state === 1) {
