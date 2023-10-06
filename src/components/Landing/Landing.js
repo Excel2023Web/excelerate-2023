@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
 // import { useScreenWidth } from "../../hooks/useScreenWidth";
 import "./Landing.css";
-import landing from "../../assets/landing.svg";
+// import landing from "../../assets/landing.svg";
 import CountUp from "react-countup";
 // import AccountHandler from "../../auth/accountHandler";
 import { useNavigate } from "react-router-dom";
@@ -13,13 +13,34 @@ import Bubbles from "../Bubbles/Bubbles";
 import Aos from "aos";
 import Scroller from "../Scroller/Scroller";
 import { useScreenWidth } from "../../hooks/useScreenWidth";
-
+import Lottie from "react-lottie";
+import socialAnimation from "../../assets/animations/social_media.json";
 function Landing() {
   useEffect(() => {
     Aos.init({ duration: 1100 });
   }, []);
-  const [open, setOpen] = useState(false);
   const size = useScreenWidth();
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: socialAnimation,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+  const [animationSize, setAnimationSize] = useState();
+  useEffect(() => {
+    if (size > 600) {
+      setAnimationSize(450);
+    } else if (size > 500) {
+      setAnimationSize(450);
+    } else if (size > 400) {
+      setAnimationSize(400);
+    } else {
+      setAnimationSize(300);
+    }
+  }, [size]);
+  const [open, setOpen] = useState(false);
   const { referrelId, isAmbassador } = useContext(UserContext);
 
   const handleClose = () => {
@@ -44,16 +65,22 @@ function Landing() {
     <div className="landing__container" id="home">
       <PhoneNoDialog open={open} handleClose={handleClose} />
       <div className="landing__container_up">
-        <img
+        {/* <img
           data-aos="zoom-in"
           className="landing__left__section"
           src={landing}
           alt=""
+        /> */}
+        <Lottie
+          options={defaultOptions}
+          height={animationSize}
+          width={animationSize}
+          style={{ margin: 0, zIndex: 1 }}
         />
         <div className="landing__right__section">
           {size < 900 ? <Scroller /> : null}
 
-          <h1>Excelerate </h1>
+          <h1>Excelerate <br /> Campus Ambassador</h1>
           {/* <button className="reg__btn" onClick={onLoginClick}>Register</button> */}
 
           {AccountHandler.isUserLoggedIn() ? (
@@ -113,9 +140,7 @@ function Landing() {
               k
             </h1>
           </div>
-          <div
-            className="landing__card__content"
-          >
+          <div className="landing__card__content">
             <h4>FootFall</h4>
           </div>
         </div>
@@ -131,9 +156,7 @@ function Landing() {
               +
             </h1>
           </div>
-          <div
-            className="landing__card__content"
-          >
+          <div className="landing__card__content">
             <h4>Events</h4>
           </div>
         </div>
@@ -149,9 +172,7 @@ function Landing() {
               L+
             </h1>
           </div>
-          <div
-            className="landing__card__content"
-          >
+          <div className="landing__card__content">
             <h4>Prize Pool</h4>
           </div>
         </div>
