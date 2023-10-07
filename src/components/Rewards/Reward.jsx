@@ -14,7 +14,7 @@ function Reward() {
   return (
     <div className="rewards__container" id="rewards">
     <div className="reward__section">
-      <div data-aos="fade-up" aos-delay="200" className="section__title">
+      <div data-aos="fade-up" aos-delay="200" className="resp__upper__heading">
         <img data-aos="zoom-in" aos-delay="200" src={titleVectorLeft} alt="" />
         <h1>
           REWARDS <span className="reward__middle_head">AND</span> PERKS
