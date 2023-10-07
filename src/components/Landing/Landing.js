@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
 // import { useScreenWidth } from "../../hooks/useScreenWidth";
 import "./Landing.css";
-import landing from "../../assets/landing.svg";
+// import landing from "../../assets/landing.svg";
 import CountUp from "react-countup";
 // import AccountHandler from "../../auth/accountHandler";
 import { useNavigate } from "react-router-dom";
@@ -9,14 +9,38 @@ import AccountHandler from "../../auth/accountHandler";
 import PhoneNoDialog from "../PhoneNoDialog/PhoneNoDialog";
 import IsAuthRender from "../IsAuthRender/IsAuthRender";
 import { UserContext } from "../../contexts/UserContext";
+import Bubbles from "../Bubbles/Bubbles";
 import Aos from "aos";
+import Scroller from "../Scroller/Scroller";
+import { useScreenWidth } from "../../hooks/useScreenWidth";
+import Lottie from "react-lottie";
+import socialAnimation from "../../assets/animations/social_media.json";
 function Landing() {
-  useEffect(()=>{
-    Aos.init({duration:1100})
-  },[])
+  useEffect(() => {
+    Aos.init({ duration: 1100 });
+  }, []);
+  const size = useScreenWidth();
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: socialAnimation,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+  const [animationSize, setAnimationSize] = useState();
+  useEffect(() => {
+    if (size > 600) {
+      setAnimationSize(450);
+    } else if (size > 500) {
+      setAnimationSize(450);
+    } else if (size > 400) {
+      setAnimationSize(400);
+    } else {
+      setAnimationSize(300);
+    }
+  }, [size]);
   const [open, setOpen] = useState(false);
-
-
   const { referrelId, isAmbassador } = useContext(UserContext);
 
   const handleClose = () => {
@@ -33,49 +57,61 @@ function Landing() {
   };
 
   // eslint-disable-next-line
-  const onLogoutClick = () => {
-    AccountHandler.logOutUser();
-  };
+ 
 
   return (
-    <div className="landing__container">
-       <PhoneNoDialog open={open} handleClose={handleClose} />
+    <div className="landing__container" id="home">
+      <PhoneNoDialog open={open} handleClose={handleClose} />
       <div className="landing__container_up">
-        <img data-aos="zoom-in" className="landing__left__section" src={landing} alt="" />
+        {/* <img
+          data-aos="zoom-in"
+          className="landing__left__section"
+          src={landing}
+          alt=""
+        /> */}
+        <Lottie
+          options={defaultOptions}
+          height={animationSize}
+          width={animationSize}
+          style={{ margin: 0, zIndex: 1 }}
+        />
         <div className="landing__right__section">
-          <h1 data-aos="zoom-in">Campus Ambassador</h1>
+          {size < 900 ? <Scroller /> : null}
+
+          <h1>Excelerate <br /> Campus Ambassador</h1>
           {/* <button className="reg__btn" onClick={onLoginClick}>Register</button> */}
+
           {AccountHandler.isUserLoggedIn() ? (
             <div>
               {AccountHandler.isUserLoggedIn() ? (
-        <div>
-          {isAmbassador ? (
-            <IsAuthRender
-              state={2}
-              referrelId={referrelId}
-              open={open}
-              setOpen={setOpen}
-              onLoginClick={onLoginClick}
-            />
-          ) : (
-            <IsAuthRender
-              state={1}
-              referrelId={referrelId}
-              open={open}
-              setOpen={setOpen}
-              onLoginClick={onLoginClick}
-            />
-          )}
-        </div>
-      ) : (
-        <IsAuthRender
-          state={3}
-          referrelId={referrelId}
-          open={open}
-          setOpen={setOpen}
-          onLoginClick={onLoginClick}
-        />
-      )}
+                <div>
+                  {isAmbassador ? (
+                    <IsAuthRender
+                      state={2}
+                      referrelId={referrelId}
+                      open={open}
+                      setOpen={setOpen}
+                      onLoginClick={onLoginClick}
+                    />
+                  ) : (
+                    <IsAuthRender
+                      state={1}
+                      referrelId={referrelId}
+                      open={open}
+                      setOpen={setOpen}
+                      onLoginClick={onLoginClick}
+                    />
+                  )}
+                </div>
+              ) : (
+                <IsAuthRender
+                  state={3}
+                  referrelId={referrelId}
+                  open={open}
+                  setOpen={setOpen}
+                  onLoginClick={onLoginClick}
+                />
+              )}
             </div>
           ) : (
             <IsAuthRender
@@ -94,7 +130,7 @@ function Landing() {
           <div className="landing__card__heading">
             <h1>
               <CountUp
-                end={40}
+                end={8}
                 duration={2}
                 enableScrollSpy={true}
                 preserveValue={true}
@@ -102,11 +138,11 @@ function Landing() {
               k
             </h1>
           </div>
-          <div data-aos="fade-up" aos-delay="100" className="landing__card__content">
+          <div className="landing__card__content">
             <h4>FootFall</h4>
           </div>
         </div>
-        <div data-aos="fade-up"aos-delay="200" className="landing__card">
+        <div data-aos="fade-up" aos-delay="200" className="landing__card">
           <div className="landing__card__heading">
             <h1>
               <CountUp
@@ -115,10 +151,10 @@ function Landing() {
                 enableScrollSpy={true}
                 preserveValue={true}
               />
-              k
+              +
             </h1>
           </div>
-          <div data-aos="fade-up" aos-delay="400" className="landing__card__content">
+          <div className="landing__card__content">
             <h4>Events</h4>
           </div>
         </div>
@@ -126,19 +162,20 @@ function Landing() {
           <div className="landing__card__heading">
             <h1>
               <CountUp
-                end={40}
+                end={4}
                 duration={2}
                 enableScrollSpy={true}
                 preserveValue={true}
               />
-              k
+              L+
             </h1>
           </div>
-          <div data-aos="fade-up" aos-delay="800" className="landing__card__content">
+          <div className="landing__card__content">
             <h4>Prize Pool</h4>
           </div>
         </div>
       </div>
+      <Bubbles />
     </div>
   );
 }

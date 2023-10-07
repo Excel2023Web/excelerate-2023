@@ -1,4 +1,5 @@
-import { mathew, ajeed, abhishek, vishnu, basil } from "../assets/png/contacts";
+import { mathew,abhishek,vishnu,ajeed,basil } from "../assets/png/contacts";
+
 export const contactsData = [
   {
     id: 1,

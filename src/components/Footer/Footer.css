@@ -4,12 +4,19 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
   color: #ffff;
   font-weight: 300;
   font-family: var(--primary-font);
   font-size: 1rem;
 }
+.heart_icon {
+  width: 1rem;
+  height: 1rem;
+  margin-bottom: -0.15rem;
+  pointer-events: none;
+}
+
 .mec___logo_footer {
   width: 9rem;
 }
@@ -25,8 +32,24 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+}
+.footer_social_logos>a{
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  color: #ffff;
+  font-size: 1.2rem;
+}
+.footer_social_logos>a:hover{
+  
+  background-color: var(--secondaryColor);
 }
 @media screen and (max-width: 680px) {
   .footer__main {

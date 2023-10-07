@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Dialog } from "@mui/material";
 import "./PhoneNoDialog.css";
-import axios from "axios";
-import { caBaseUrl } from "../../utils/urls";
 import Aos from "aos";
 const PhoneNoDialog = ({ open, handleClose }) => {
   useEffect(() => {
@@ -11,32 +9,30 @@ const PhoneNoDialog = ({ open, handleClose }) => {
   const [phNo, setPhNo] = useState("");
   const finalSubmit = (e) => {
     e.preventDefault();
-    if (phNo.length === 10) {
-      axios
-        .post(`${caBaseUrl}/ambassador`, {
-          access_token: window.localStorage.getItem("accessToken"),
-          phone_no: phNo,
-        })
-        .then(
-          (response) => {
-            // console.log(response);
-            if (response.status === 201) {
-              alert(
-                "Successfully registered as Excel 2022 campus ambassador.."
-              );
-              handleClose();
-              window.location.reload();
-            }
-          },
-          (error) => {
-            // console.log(error);
-            alert(error.response.data.error);
-            handleClose();
-          }
-        );
-    } else {
-      alert("Please check the entered Mobile number value");
-    }
+    // if (phNo.length === 10) {
+    //   axios
+    //     .post(`${caBaseUrl}/ambassador`, {
+    //       access_token: window.localStorage.getItem("accessToken"),
+    //       phone_no: phNo,
+    //     })
+    //     .then(
+    //       (response) => {
+    //         if (response.status === 201) {
+    //           alert(
+    //             "Successfully registered as Excel 2022 campus ambassador.."
+    //           );
+    //           handleClose();
+    //           window.location.reload();
+    //         }
+    //       },
+    //       (error) => {
+    //         alert(error.response.data.error);
+    //         handleClose();
+    //       }
+    //     );
+    // } else {
+    //   alert("Please check the entered Mobile number value");
+    // }
   };
   return (
     <div data-aos="zoom-in">

@@ -1,5 +1,5 @@
-export { default as abhishek } from "./abhishek.jpeg";
-export { default as mathew } from "./mathew.jpeg";
-export { default as ajeed } from "./ajeed.jpeg";
-export { default as basil } from "./basil.jpeg";
-export { default as vishnu } from "./vishnu.jpeg";
+export { default as mathew } from "./mathew.png";
+export { default as abhishek } from "./abhishek.png";
+export { default as vishnu } from "./vishnu.png";
+export { default as ajeed } from "./ajeed.png";
+export { default as basil } from "./basil.png";

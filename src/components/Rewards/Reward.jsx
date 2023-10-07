@@ -12,17 +12,18 @@ function Reward() {
     Aos.init({ duration: 1100 });
   }, []);
   return (
+    <div className="rewards__container" id="rewards">
     <div className="reward__section">
       <div data-aos="fade-up" aos-delay="200" className="section__title">
         <img data-aos="zoom-in" aos-delay="200" src={titleVectorLeft} alt="" />
         <h1>
-          Reward <span className="reward__middle_head">and</span> Perks
+          REWARDS <span className="reward__middle_head">AND</span> PERKS
         </h1>
         <img src={titleVecotrRight} alt="" />
       </div>
       <div className="reward__top__section">
         <div className="reward__left">
-          <img data-aos="zoom-in" aos-delay="200" src={reward_section_img} alt="" />
+          <img data-aos="zoom-in" aos-delay="200" src={reward_section_img} alt="" style={{pointerEvents:"none"}}/>
         </div>
         <div className="reward__right">
           <div className="reward__right__top">
@@ -62,6 +63,7 @@ function Reward() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

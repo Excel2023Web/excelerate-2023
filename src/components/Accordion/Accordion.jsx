@@ -20,8 +20,8 @@ const Accordion = () => {
   };
 
   return (
-    <div className="faq__section">
-      <div data-aos="zoom-in" aos-delay="200" className="section__title">
+    <div className="faq__section" id="faq">
+      <div data-aos="zoom-in" aos-delay="200" className="resp__upper__heading">
         <img src={titleVectorLeft} alt="" />
         <h1>FAQ</h1>
         <img src={titleVecotrRight} alt="" />
