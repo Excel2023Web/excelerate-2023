@@ -50,6 +50,7 @@ code {
     color: #F74670;
     font-family: var(--primary-font);
     font-size: 3rem;
+    text-align: center;
 }
 
 .resp__upper__heading {
