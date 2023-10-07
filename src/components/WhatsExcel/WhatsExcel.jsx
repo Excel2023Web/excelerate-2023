@@ -7,7 +7,7 @@ import Aos from "aos";
 import { useEffect } from "react";
 function WhatsExcel() {
   useEffect(() => {
-    Aos.init({ duration: 1100 });
+    Aos.init({ duration: 700 });
   }, []);
   return (
     <div className="Whatexcel__continaer" id="about">

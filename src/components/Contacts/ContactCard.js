@@ -5,7 +5,7 @@ import Aos from "aos";
 
 const ContactCard = ({ contact }) => {
   useEffect(() => {
-    Aos.init({ duration: 1100 });
+    Aos.init({ duration: 700 });
   }, []);
   return (
     <div data-aos="zoom-in" aos-delay="200" className="contact__card_main">

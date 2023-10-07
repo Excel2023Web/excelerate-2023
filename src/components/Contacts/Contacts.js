@@ -7,7 +7,7 @@ import Aos from "aos";
 import { contactsData } from "../../data/contacts";
 const Contacts = () => {
   useEffect(() => {
-    Aos.init({ duration: 1100 });
+    Aos.init({ duration: 700 });
   },[]);
   return (
     <div className="contacts__main" id="contacts">

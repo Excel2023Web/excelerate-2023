@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 const Leaderboard = () => {
   const navigate = useNavigate();
   useEffect(() => {
-    Aos.init({ duration: 1100 });
+    Aos.init({ duration: 700 });
   }, []);
   const goBack = () => {
     navigate("/");

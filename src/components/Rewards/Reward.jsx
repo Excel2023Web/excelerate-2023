@@ -9,7 +9,7 @@ import reward_section_img from "../../assets/svg/reward_section_img.svg";
 import Aos from "aos";
 function Reward() {
   useEffect(() => {
-    Aos.init({ duration: 1100 });
+    Aos.init({ duration: 700 });
   }, []);
   return (
     <div className="rewards__container" id="rewards">
