@@ -1,9 +1,6 @@
 import React, { useState, useContext, useEffect } from "react";
-// import { useScreenWidth } from "../../hooks/useScreenWidth";
 import "./Landing.css";
-// import landing from "../../assets/landing.svg";
 import CountUp from "react-countup";
-// import AccountHandler from "../../auth/accountHandler";
 import { useNavigate } from "react-router-dom";
 import AccountHandler from "../../auth/accountHandler";
 import PhoneNoDialog from "../PhoneNoDialog/PhoneNoDialog";
@@ -63,12 +60,6 @@ function Landing() {
     <div className="landing__container" id="home">
       <PhoneNoDialog open={open} handleClose={handleClose} />
       <div className="landing__container_up">
-        {/* <img
-          data-aos="zoom-in"
-          className="landing__left__section"
-          src={landing}
-          alt=""
-        /> */}
         <Lottie
           options={defaultOptions}
           height={animationSize}
@@ -142,7 +133,7 @@ function Landing() {
             <h4>FootFall</h4>
           </div>
         </div>
-        <div data-aos="fade-up" aos-delay="200" className="landing__card">
+        <div className="landing__card">
           <div className="landing__card__heading">
             <h1>
               <CountUp

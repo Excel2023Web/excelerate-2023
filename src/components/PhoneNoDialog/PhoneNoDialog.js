@@ -4,7 +4,7 @@ import "./PhoneNoDialog.css";
 import Aos from "aos";
 const PhoneNoDialog = ({ open, handleClose }) => {
   useEffect(() => {
-    Aos.init({ duration: 900 });
+    Aos.init({ duration: 700 });
   }, []);
   const [phNo, setPhNo] = useState("");
   const finalSubmit = (e) => {
