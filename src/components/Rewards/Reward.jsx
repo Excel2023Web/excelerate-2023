@@ -28,17 +28,17 @@ function Reward() {
         <div className="reward__right">
           <div className="reward__right__top">
             <div data-aos="zoom-in" aos-delay="200" className="reward__cards__priz reward__first__prize">
-              <img src={firstplace} alt="" />
+              <img src={firstplace} alt=""style={{pointerEvents:"none"}} />
               <h2>10,000</h2>
             </div>
             <div data-aos="zoom-in" aos-delay="350" className="reward__cards__priz reward__second__prize">
-              <img src={secondplace} alt="" />
+              <img src={secondplace} alt="" style={{pointerEvents:"none"}}/>
               <h2>10,000</h2>
             </div>
           </div>
           <div className="reward__right__middle">
             <div data-aos="zoom-in" aos-delay="450" className="reward__cards__priz reward__third__prize">
-              <img src={thirdplace} alt="" />
+              <img src={thirdplace} alt=""style={{pointerEvents:"none"}} />
               <h2>10,000</h2>
             </div>
           </div>

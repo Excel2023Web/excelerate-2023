@@ -72,7 +72,6 @@ function Landing() {
           <h1>
             Excelerate <br /> Campus Ambassador
           </h1>
-          {/* <button className="reg__btn" onClick={onLoginClick}>Register</button> */}
 
           {AccountHandler.isUserLoggedIn() ? (
             <div>

@@ -13,7 +13,7 @@ function WhatsExcel() {
     <div className="Whatexcel__continaer" id="about">
       <div className="resp__upper__heading">
         <img src={titleVectorLeft} alt="" />
-        <h1 data-aos="fade-up">WHAT IS EXCEL</h1>
+        <h1 >WHAT IS EXCEL</h1>
         <img src={titleVecotrRight} alt="" />
       </div>
       <p data-aos="fade-up"aos-delay="400" className="whats_excel_content">
