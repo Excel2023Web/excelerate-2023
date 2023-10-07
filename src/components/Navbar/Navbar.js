@@ -8,7 +8,6 @@ import AccountHandler from "../../auth/accountHandler";
 const Navbar = () => {
   const [checked, setChecked] = useState(false);
   const handleClick = () => setChecked(!checked);
-  // const {profile}=useContext(UserContext);
   const onLogoutClick = () => {
     AccountHandler.logOutUser();
   };
