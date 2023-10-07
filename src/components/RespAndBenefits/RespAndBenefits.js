@@ -21,7 +21,7 @@ function RespAndBenefits() {
         <div className="responsibilit__container">
           <div className="responsibilit__heading">
             <div className="resp__upper__heading">
-              <img data-aos="zoom-in" src={titleVectorLeft} alt="" />
+              <img  src={titleVectorLeft} alt="" />
               <h1 data-aos="fade-up">RESPONSIBILITIES</h1>
               <img src={titleVecotrRight} alt="" />
             </div>
