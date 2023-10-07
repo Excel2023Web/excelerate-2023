@@ -10,21 +10,22 @@ import Bubbles from "../Bubbles/Bubbles";
 import Aos from "aos";
 import Scroller from "../Scroller/Scroller";
 import { useScreenWidth } from "../../hooks/useScreenWidth";
-import Lottie from "react-lottie";
+import Lottie from "lottie-react";
 import socialAnimation from "../../assets/animations/social_media.json";
 function Landing() {
   useEffect(() => {
     Aos.init({ duration: 1100 });
   }, []);
   const size = useScreenWidth();
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: socialAnimation,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+  // const defaultOptions = {
+  //   loop: true,
+  //   autoplay: true,
+  //   animationData: socialAnimation,
+  //   rendererSettings: {
+  //     preserveAspectRatio: "xMidYMid slice",
+  //   },
+  // };
+
   const [animationSize, setAnimationSize] = useState();
   useEffect(() => {
     if (size > 600) {
@@ -54,22 +55,23 @@ function Landing() {
   };
 
   // eslint-disable-next-line
- 
 
   return (
     <div className="landing__container" id="home">
       <PhoneNoDialog open={open} handleClose={handleClose} />
       <div className="landing__container_up">
         <Lottie
-          options={defaultOptions}
-          height={animationSize}
-          width={animationSize}
-          style={{ margin: 0, zIndex: 1 }}
+          animationData={socialAnimation}
+          loop={true}
+          autoplay={true}
+          style={{ width: animationSize, height: animationSize }}
         />
         <div className="landing__right__section">
           {size < 900 ? <Scroller /> : null}
 
-          <h1>Excelerate <br /> Campus Ambassador</h1>
+          <h1>
+            Excelerate <br /> Campus Ambassador
+          </h1>
           {/* <button className="reg__btn" onClick={onLoginClick}>Register</button> */}
 
           {AccountHandler.isUserLoggedIn() ? (
