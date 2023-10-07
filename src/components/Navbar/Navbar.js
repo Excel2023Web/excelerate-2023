@@ -1,18 +1,24 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Navbar.css";
 import excelLogo from "../../assets/png/excelLogo.png";
 import { Link as NavLink } from "react-scroll";
+import AccountHandler from "../../auth/accountHandler";
+// import { UserContext } from "../../contexts/UserContext";
+
 const Navbar = () => {
   const [checked, setChecked] = useState(false);
   const handleClick = () => setChecked(!checked);
-
+  // const {profile}=useContext(UserContext);
+  const onLogoutClick = () => {
+    AccountHandler.logOutUser();
+  };
   return (
     <div className="nav__main_container">
       <img
         className="nav__outside_logo"
         src={excelLogo}
         onClick={() => {
-          window.open('https://excelmec.org');
+          window.open("https://excelmec.org");
         }}
         alt="excelLogo"
       />
@@ -62,6 +68,11 @@ const Navbar = () => {
                     CONTACTS
                   </NavLink>
                 </li>
+                {AccountHandler.isUserLoggedIn() ? (
+                  <button className="logout_btn" onClick={onLogoutClick}>
+                    Logout
+                  </button>
+                ) : null}
               </ul>
             </div>
           </div>

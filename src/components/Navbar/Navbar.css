@@ -19,6 +19,21 @@
   font-family: var(--primary-font);
   /* padding-top: 2rem; */
 }
+.logout_btn{
+  color: var(--secondaryColor);
+  cursor: pointer;
+  font-family: var(--primary-font);
+  width: 5rem;
+  padding: 10px;
+  border: 1px solid var(--secondaryColor);
+  border-radius: 10px;
+  background-color: #1E1E1E;
+}
+.logout_btn:hover{
+  background-color: var(--secondaryColor);
+  color: #fff;
+  transition: 0.2 ease-in;
+}
 .nav__full_wrapper {
   display: flex;
   width: 100%;

@@ -57,9 +57,7 @@ function Landing() {
   };
 
   // eslint-disable-next-line
-  const onLogoutClick = () => {
-    AccountHandler.logOutUser();
-  };
+ 
 
   return (
     <div className="landing__container" id="home">
