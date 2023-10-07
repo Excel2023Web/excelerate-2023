@@ -3,19 +3,26 @@ import { FiCopy, FiCheck } from "react-icons/fi";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import axios from "axios";
 import { accountBackendUrl, accountsBaseURL } from "../../utils/urls";
+import { UserContext } from "../../contexts/UserContext";
 
 const IsAuthRender = ({ state, open, setOpen, onLoginClick, referrelId }) => {
   const [copied, setCopied] = useState(false);
+  const { getExcelId } = React.useContext(UserContext);
 
   const handleRegistration = async () => {
     const accessToken = window.localStorage.getItem("accessToken");
     try {
-      const res = await axios.get(`${accountBackendUrl}/api/Ambassador/signup`, {
-        headers: {
-          Authorization: `Bearer ${accessToken}`,
-        },
-      });
-      console.log(res);
+      const res = await axios.get(
+        `${accountBackendUrl}/api/Ambassador/signup`,
+        {
+          headers: {
+            Authorization: `Bearer ${accessToken}`,
+          },
+        }
+      );
+      if (res.status === 200) {
+        getExcelId(window.localStorage.getItem("accessToken"));
+      }
     } catch (err) {
       switch (err.response?.status) {
         case 200:
@@ -33,7 +40,6 @@ const IsAuthRender = ({ state, open, setOpen, onLoginClick, referrelId }) => {
       }
       console.log(err);
     } finally {
-
     }
   };
 
