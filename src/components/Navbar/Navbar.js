@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, {  useState } from "react";
 import "./Navbar.css";
 import excelLogo from "../../assets/png/excelLogo.png";
 import { Link as NavLink } from "react-scroll";
