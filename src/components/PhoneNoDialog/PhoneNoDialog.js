@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Dialog } from "@mui/material";
 import "./PhoneNoDialog.css";
-import axios from "axios";
 import Aos from "aos";
 const PhoneNoDialog = ({ open, handleClose }) => {
   useEffect(() => {
