@@ -12,7 +12,7 @@
     font-family: var(--secondaryColor);
 }
 
-.section__title>img{
+.resp__upper__heading>img{
     pointer-events: none;
 }
 .reward__middle_head {
@@ -126,6 +126,9 @@
         width: 2rem;
         pointer-events: none;
     }
+    .resp__upper__heading h1 {
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -145,15 +148,15 @@
     .reward__top__section {
         flex-direction: column;
     }
-    .section__title {
+    .resp__upper__heading {
         width: 80%;
         margin: auto;
     }
-    .section__title h1 {
+    .resp__upper__heading h1 {
         font-size: 2rem;
         text-align: center;
     }
-    .section__title img {
+    .resp__upper__heading img {
         display: none;
         pointer-events: none;
     }
