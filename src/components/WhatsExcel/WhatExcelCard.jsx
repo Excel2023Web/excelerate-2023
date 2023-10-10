@@ -85,8 +85,8 @@ function ImageSlider() {
   }, [interval, slides.length]);
 
   return (
-    <div className="panelist__caroussel" data-aos="zoom-in" {...handlers}>
-      <div className="panelist__caroussel__img" data-aos="zoom-in">
+    <div className="panelist__caroussel" {...handlers}>
+      <div className="panelist__caroussel__img">
         <Carousel
           slides={slides}
           goToSlide={goToSlide}
