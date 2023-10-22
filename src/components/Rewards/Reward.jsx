@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Reward.css";
 import firstplace from "../../assets/svg/first place medal_.svg";
 import secondplace from "../../assets/svg/second place medal_.svg";
@@ -6,11 +6,7 @@ import thirdplace from "../../assets/svg/third place medal_.svg";
 import titleVectorLeft from "../../assets/svg/title_vector_left.svg";
 import titleVecotrRight from "../../assets/svg/title__vector_right.svg";
 import reward_section_img from "../../assets/svg/reward_section_img.svg";
-import Aos from "aos";
 function Reward() {
-  useEffect(() => {
-    Aos.init({ duration: 700 });
-  }, []);
   return (
     <div className="rewards__container" id="rewards">
     <div className="reward__section">

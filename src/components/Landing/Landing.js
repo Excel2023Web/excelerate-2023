@@ -7,15 +7,12 @@ import PhoneNoDialog from "../PhoneNoDialog/PhoneNoDialog";
 import IsAuthRender from "../IsAuthRender/IsAuthRender";
 import { UserContext } from "../../contexts/UserContext";
 import Bubbles from "../Bubbles/Bubbles";
-import Aos from "aos";
 import Scroller from "../Scroller/Scroller";
 import { useScreenWidth } from "../../hooks/useScreenWidth";
 import Lottie from "lottie-react";
 import socialAnimation from "../../assets/animations/social_media.json";
 function Landing() {
-  useEffect(() => {
-    Aos.init({ duration: 1100 });
-  }, []);
+
   const size = useScreenWidth();
   const [animationSize, setAnimationSize] = useState();
   useEffect(() => {
