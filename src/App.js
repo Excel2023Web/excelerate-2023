@@ -6,13 +6,16 @@ import ScrollToTop from "./utils/ScrollToTop";
 import UserDetails from "./contexts/UserContext.js";
 import Loader from "./components/Loader/Loader";
 import Aos from "aos";
+import { useScreenWidth } from "./hooks/useScreenWidth";
 function App() {
+  
+  const size = useScreenWidth();
   useEffect(() => {
     Aos.init({
       duration: 700,
-      offset: -500,
+      offset: size > 900 ? -500 : 0,
     });
-  }, []);
+  }, [size]);
 
   return (
     <UserDetails>
