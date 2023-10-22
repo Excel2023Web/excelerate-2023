@@ -3,12 +3,9 @@ import titleVectorLeft from "../../assets/svg/title_vector_left.svg";
 import titleVecotrRight from "../../assets/svg/title__vector_right.svg";
 import "./WhatsExcel.css";
 import ImageSlider from "./WhatExcelCard";
-import Aos from "aos";
-import { useEffect } from "react";
+
 function WhatsExcel() {
-  useEffect(() => {
-    Aos.init({ duration: 700 });
-  }, []);
+
   return (
     <div className="Whatexcel__continaer" id="about">
       <div className="resp__upper__heading">

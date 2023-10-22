@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./RespAndBenefits.css";
 import titleVectorLeft from "../../assets/svg/title_vector_left.svg";
 import titleVecotrRight from "../../assets/svg/title__vector_right.svg";
@@ -6,12 +6,7 @@ import benefitsLeftTop from "../../assets/svg/benefits_left_top.svg";
 import benefitsRightTop from "../../assets/svg/benefits_right_top.svg";
 import benefitsLeftBottom from "../../assets/svg/benefits_left_bottom.svg";
 import benefitsRightBottom from "../../assets/svg/benefits_right_bottom.svg";
-
-import Aos from "aos";
 function RespAndBenefits() {
-  useEffect(() => {
-    Aos.init({ duration: 700 });
-  }, []);
   return (
     <>
       <img src={benefitsLeftTop} alt="" className="benefits__left__top" />
