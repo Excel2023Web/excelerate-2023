@@ -17,15 +17,6 @@ function Landing() {
     Aos.init({ duration: 1100 });
   }, []);
   const size = useScreenWidth();
-  // const defaultOptions = {
-  //   loop: true,
-  //   autoplay: true,
-  //   animationData: socialAnimation,
-  //   rendererSettings: {
-  //     preserveAspectRatio: "xMidYMid slice",
-  //   },
-  // };
-
   const [animationSize, setAnimationSize] = useState();
   useEffect(() => {
     if (size > 600) {
