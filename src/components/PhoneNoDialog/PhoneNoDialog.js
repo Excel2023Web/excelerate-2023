@@ -1,11 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Dialog } from "@mui/material";
 import "./PhoneNoDialog.css";
-import Aos from "aos";
 const PhoneNoDialog = ({ open, handleClose }) => {
-  useEffect(() => {
-    Aos.init({ duration: 700 });
-  }, []);
+
   const [phNo, setPhNo] = useState("");
   const finalSubmit = (e) => {
     e.preventDefault();
