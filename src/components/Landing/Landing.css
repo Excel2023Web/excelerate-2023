@@ -51,7 +51,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 4rem;
   font-family: var(--primary-font);
   /* width: 220px;
     height: 60px; */
@@ -65,7 +65,7 @@
   position: relative;
   z-index: 9;
   transform-style: preserve-3d;
-  margin: 1rem 0;
+  margin: auto;
   cursor: pointer;
 }
 
