@@ -5,12 +5,9 @@ import { config } from "react-spring";
 // import Pic1 from "../../assets/png/whatsimg.png";
 import { useSwipeable } from "react-swipeable";
 import "./WhatsExcel.css";
-import Aos from "aos";
 import { p1, p2, p3, p4, p5 } from "../../assets/png/gallery";
 function ImageSlider() {
-  useEffect(() => {
-    Aos.init({ duration: 700 });
-  }, []);
+
   const [goToSlide, setGoToSlide] = useState(0);
   const [offsetRadius] = useState(1);
   const [carouselConfig] = useState(config.gentle);
