@@ -5,22 +5,19 @@ import "./WhatsExcel.css";
 import ImageSlider from "./WhatExcelCard";
 
 function WhatsExcel() {
-
   return (
     <div className="Whatexcel__continaer" id="about">
       <div className="resp__upper__heading">
         <img src={titleVectorLeft} alt="" />
-        <h1 >WHAT IS EXCEL</h1>
+        <h1>WHAT IS EXCEL</h1>
         <img src={titleVecotrRight} alt="" />
       </div>
-      <p data-aos="fade-up"aos-delay="400" className="whats_excel_content">
-        In 2001, the students of Govt. Model Engineering College founded Excel,
-        the second-largest techno-managerial festival in the country and the
-        first of its kind in South India. Excel has steadily hosted students
-        from more than 2000 universities and 1000 institutions across the nation
-        as it has grown exponentially over the years. The 22 successful editions
-        of Excel that have preceded it have a rich legacy, and Excel 2022
-        promises to be even better.
+      <p data-aos="fade-up" aos-delay="400" className="whats_excel_content">
+        Excel is India’s second largest techno-managerial festival hosted by
+        Govt. Model Engineering College, Kochi. Over the years, more than 2000
+        universities and 1000 institutions from around the country have been
+        part of Excel. With the rich legacy of 23 successful editions of Excel,
+        be geared up for an even more exhilarating event this Excel 2023!
       </p>
       <ImageSlider />
     </div>
