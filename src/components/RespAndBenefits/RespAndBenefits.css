@@ -80,6 +80,15 @@
   right: 0px;
 }
 
+@media only screen and (min-width: 1200px) {
+  .resposibility__points {
+    width: 50% ; 
+    margin: 0 auto;
+  }
+}
+
+
+
 @media only screen and (max-width: 1300px) {
 }
 
