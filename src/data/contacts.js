@@ -1,4 +1,4 @@
-import { mathew,abhishek,vishnu,ajeed,basil } from "../assets/png/contacts";
+import { mathew,abhishek,vishnu,ajeed,basil,godson, angel } from "../assets/png/contacts";
 
 export const contactsData = [
   {
@@ -50,9 +50,18 @@ export const contactsData = [
     id: 6,
     name: "Godson Francis",
     designation: "Event Head",
-    image: basil,
+    image: godson,
     phone: "+919656116762",
     email: "godsonfrancis.mec@gmail.com",
     linkedIn: "https://www.linkedin.com/in/ɢᴏᴅsᴏɴ-ғʀᴀɴᴄɪs-632a13267",
+  },
+  {
+    id: 7,
+    name: "Angel Elsa George",
+    designation: "Event Head",
+    image: angel,
+    phone: "+919778045819",
+    email: "angelgeorge704@gmail.com",
+    linkedIn: "",
   },
 ];
