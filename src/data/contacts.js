@@ -1,4 +1,4 @@
-import { mathew,abhishek,vishnu,ajeed,basil, godson } from "../assets/png/contacts";
+import { mathew,abhishek,vishnu,ajeed,basil } from "../assets/png/contacts";
 
 export const contactsData = [
   {
@@ -50,7 +50,7 @@ export const contactsData = [
     id: 6,
     name: "Godson Francis",
     designation: "Event Head",
-    image: godson,
+    image: basil,
     phone: "+919656116762",
     email: "godsonfrancis.mec@gmail.com",
     linkedIn: "https://www.linkedin.com/in/ɢᴏᴅsᴏɴ-ғʀᴀɴᴄɪs-632a13267",
