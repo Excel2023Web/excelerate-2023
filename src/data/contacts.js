@@ -49,7 +49,7 @@ export const contactsData = [
   {
     id: 6,
     name: "Godson Francis",
-    designation: "Event Head",
+    designation: "Point Of Contact (POC)",
     image: godson,
     phone: "+919656116762",
     email: "godsonfrancis.mec@gmail.com",
@@ -58,7 +58,7 @@ export const contactsData = [
   {
     id: 7,
     name: "Angel Elsa George",
-    designation: "Event Head",
+    designation: "Point Of Contact (POC)",
     image: angel,
     phone: "+919778045819",
     email: "angelgeorge704@gmail.com",

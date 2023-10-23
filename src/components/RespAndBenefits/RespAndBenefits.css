@@ -60,6 +60,7 @@
 
 .benefits__left__top {
   position: relative;
+  pointer-events: none;
   top: 0px;
   left: 0px;
 }
@@ -72,6 +73,7 @@
 
 .benefits__right__top {
   position: absolute;
+  pointer-events: none;
   right: 0px;
 }
 
@@ -112,6 +114,7 @@
   }
   .resp__upper__heading img {
     width: 25%;
+    pointer-events: none;
     pointer-events: none;
   }
   .resp__upper__heading {
