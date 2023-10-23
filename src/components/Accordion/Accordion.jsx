@@ -70,7 +70,7 @@ const data = [
   {
     question: "Where do I register?",
     answer:
-      'Register at the top of the website <a href="https://excelerate-2023.vercel.app" target="_blank" class="content-link">excelerate-2023.vercel.app/</a> by clicking on the register button and filling in your details.',
+      'Register at the top of the website <a href="https://ca.excelmec.org/" target="_blank" class="content-link">ca.excelmec.org</a> by clicking on the register button and filling in your details.',
   },
 ];
 export default Accordion;

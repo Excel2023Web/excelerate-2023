@@ -7,7 +7,7 @@ import PhoneNoDialog from "../PhoneNoDialog/PhoneNoDialog";
 import IsAuthRender from "../IsAuthRender/IsAuthRender";
 import { UserContext } from "../../contexts/UserContext";
 import Bubbles from "../Bubbles/Bubbles";
-import Scroller from "../Scroller/Scroller";
+// import Scroller from "../Scroller/Scroller";
 import { useScreenWidth } from "../../hooks/useScreenWidth";
 import Lottie from "lottie-react";
 import socialAnimation from "../../assets/animations/social_media.json";
@@ -55,7 +55,7 @@ function Landing() {
           style={{ width: animationSize, height: animationSize }}
         />
         <div className="landing__right__section">
-          {size < 900 ? <Scroller /> : null}
+          {/* {size < 900 ? <Scroller /> : null} */}
 
           <h1>
             Excelerate <br /> Campus Ambassador

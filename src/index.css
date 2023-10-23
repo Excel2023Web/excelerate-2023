@@ -4,17 +4,22 @@
 
 body {
     margin: 0;
-    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* background: radial-gradient(200.65% 776.86% at -9.28% 116.91%,#140915 35.44%,var(--themeColour) 100%); */
-    /* background: radial-gradient( 200.65% 776.86% at -9.28% 116.91%, #140915 15.44%, #80489C 100%); */
-    /* background: #1A1617; */
 }
 
+body::-webkit-scrollbar {
+  width: 0.7em;
+}
 
-/* #ad5389 */
+body::-webkit-scrollbar-track {
+  background: #000;
+}
 
+body::-webkit-scrollbar-thumb {
+  background-color: #AA076B;
+  border-radius: 10px;
+}
 code {
     font-family: var(--primary-font)
 }
