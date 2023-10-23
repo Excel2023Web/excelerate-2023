@@ -55,8 +55,6 @@ function Landing() {
           style={{ width: animationSize, height: animationSize }}
         />
         <div className="landing__right__section">
-          {/* {size < 900 ? <Scroller /> : null} */}
-
           <h1>
             Excelerate <br /> Campus Ambassador
           </h1>

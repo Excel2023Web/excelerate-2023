@@ -56,11 +56,13 @@
   /* width: 220px;
     height: 60px; */
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0.05em;
-  color: var(--secondaryColor);
-  background: #1E1E1E;
-  border: 4.1922px solid var(--secondaryColor);
+  /* color: var(--secondaryColor); */
+  color: #1E1E1E;
+  background: var(--secondaryColor);
+  /* border: 4.1922px solid var(--secondaryColor); */
+  border: none;
   border-radius: 10px;
   position: relative;
   z-index: 9;
@@ -171,6 +173,7 @@
   align-items: center;
   flex-direction: column;
 }
+
 
 .landing__card__content h4 {
   color: var(--secondaryColor);
