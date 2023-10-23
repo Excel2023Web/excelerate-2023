@@ -16,28 +16,31 @@ function RespAndBenefits() {
         <div className="responsibilit__container">
           <div className="responsibilit__heading">
             <div className="resp__upper__heading">
-              <img  src={titleVectorLeft} alt="" />
+              <img src={titleVectorLeft} alt="" />
               <h1 data-aos="fade-up">RESPONSIBILITIES</h1>
               <img src={titleVecotrRight} alt="" />
             </div>
             <h2 data-aos="fade-up" className="resp__second__heading">
-              Become the face of Excel in your Campus!
+              Be a prominent representative of Excelerate 2023 on your campus!
             </h2>
           </div>
           <div className="resposibility__points">
             <ul className="resp___points">
               <li data-aos="fade-up" aos-delay="150">
-                Connect your classmates and friends with the innovative and lit
-                events that Excel conducts.
+                Foster connections among your peers by promoting the exciting
+                and cutting-edge events organized by Excel.
               </li>
+
               <li data-aos="fade-up" aos-delay="200">
-                Promote the posters and links shared to you in your college and
-                provide sufficient publicity.
+                Share and amplify posters, links, and promotional materials
+                provided to you within your college community, ensuring maximum
+                publicity.
               </li>
 
               <li data-aos="fade-up" aos-delay="300">
-                Encourage students of your college to participate in Excel and
-                join one of the most reputed tech fests around!
+                Inspire and motivate fellow students to actively engage in Excel
+                and become part of one of the most esteemed techno-managerial
+                festivals in the region.
               </li>
             </ul>
           </div>
@@ -50,39 +53,50 @@ function RespAndBenefits() {
               aos-delay="200"
               className="resp__upper__heading"
             >
-              <img src={titleVectorLeft} alt="" style={{pointerEvents:"none"}}/>
+              <img
+                src={titleVectorLeft}
+                alt=""
+                style={{ pointerEvents: "none" }}
+              />
               <h1>BENEFITS</h1>
-              <img src={titleVecotrRight} alt="" style={{pointerEvents:"none"}}/>
+              <img
+                src={titleVecotrRight}
+                alt=""
+                style={{ pointerEvents: "none" }}
+              />
             </div>
           </div>
           <div className="resposibility__points">
             <ul data-aos="zoom-in" aos-delay="200" className="resp___points">
-              <li>
-                Get the chance to avail cash prizes and rewards of upto 12k!
-              </li>
-              <li>
-                Enrich your communication, leadership, marketing and team
-                skills.
-              </li>
+              <li>Avail cash prizes and benefits from a prize pool of ₹15K!</li>
+              <li>Earn KTU points through issued certificates.</li>
 
-              <li>Earn KTU Activity Points through Issued Certificates.</li>
+              <li>
+                Get discounts on ticket prices and free entry to certain Excel
+                events.
+              </li>
+              <li>
+                Enrich your communication, leadership, marketing and
+                collaboration skills.
+              </li>
               <li>
                 Add Excel Campus Ambassador as a valuable experience to your
                 resume!
-              </li>
-              <li>
-                Get discount ticket prices and free entry to selected Excel
-                events.
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <img src={benefitsLeftBottom} alt="" className="benefits__left__bottom"style={{pointerEvents:"none"}} />
+      <img
+        src={benefitsLeftBottom}
+        alt=""
+        className="benefits__left__bottom"
+        style={{ pointerEvents: "none" }}
+      />
       <img
         src={benefitsRightBottom}
         alt=""
-        style={{pointerEvents:"none"}}
+        style={{ pointerEvents: "none" }}
         className="benefits__right__bottom"
       />
     </>

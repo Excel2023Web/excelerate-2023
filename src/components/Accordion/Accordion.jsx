@@ -43,7 +43,7 @@ const Accordion = () => {
                 </span>
               </div>
               <div className={selected === i ? "content show" : "content"}>
-                {item.answer}
+                <div dangerouslySetInnerHTML={{ __html: item.answer }} />
               </div>
             </div>
           ))}
@@ -58,25 +58,19 @@ const Accordion = () => {
 
 const data = [
   {
-    question: "What is excel?",
+    question: "What is a Campus Ambassador(CA)?",
     answer:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolorum suscipit? Cum beatae corrupti ipsum eos reiciendis optio atque enim sapiente commodi illum unde incidunt est, alias consequatur nihil magni. Laudantium alias ab adipisci at, aliquam mollitia molestiae non magnam optio illum. Corrupti laudantium voluptatem excepturi, laborum sapiente quos ratione.",
+      "A Campus Ambassador of Excel 2023 represents Excel 2023 at their respective colleges and is responsible for sharing vital information regarding Excel 2023 within their campus.",
   },
   {
-    question: "What is excel?",
+    question: "Who can become a Campus Ambassador?",
     answer:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolorum suscipit? Cum beatae corrupti ipsum eos reiciendis optio atque enim sapiente commodi illum unde incidunt est, alias consequatur nihil magni. Laudantium alias ab adipisci at, aliquam mollitia molestiae non magnam optio illum. Corrupti laudantium voluptatem excepturi, laborum sapiente quos ratione.",
+      "Any student currently enrolled in a programme at a college with a valid college ID card is eligible to be the Campus Ambassador of Excel 2023 at their campus.",
   },
   {
-    question: "What is excel?",
+    question: "Where do I register?",
     answer:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolorum suscipit? Cum beatae corrupti ipsum eos reiciendis optio atque enim sapiente commodi illum unde incidunt est, alias consequatur nihil magni. Laudantium alias ab adipisci at, aliquam mollitia molestiae non magnam optio illum. Corrupti laudantium voluptatem excepturi, laborum sapiente quos ratione.",
-  },
-  {
-    question: "What is excel?",
-    answer:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolorum suscipit? Cum beatae corrupti ipsum eos reiciendis optio atque enim sapiente commodi illum unde incidunt est, alias consequatur nihil magni. Laudantium alias ab adipisci at, aliquam mollitia molestiae non magnam optio illum. Corrupti laudantium voluptatem excepturi, laborum sapiente quos ratione.",
+      'Register at the top of the website <a href="https://excelerate-2023.vercel.app" target="_blank" class="content-link">excelerate-2023.vercel.app/</a> by clicking on the register button and filling in your details.',
   },
 ];
-
 export default Accordion;
