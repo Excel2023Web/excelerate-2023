@@ -17,6 +17,7 @@
   margin: 1rem auto;
   justify-content: center;
   align-items: center;
+  gap: 5rem;
 }
 
 .accordion {
@@ -27,6 +28,7 @@
   letter-spacing: 0;
   line-height: normal;
   font-family: var(--primary-font);
+  margin-top: 3rem;
 
   /* top: 0; */
 }
@@ -82,21 +84,22 @@
 }
 
 .faqimgimg {
-  height: 21rem;
+  height: 40rem;
+  width: auto;
   pointer-events: none;
 }
 
 
-.content-link {
-  color: #F74670; 
-  text-decoration: none; 
-  transition: color 0.3s;
-  &:hover {
-    color: #fcf6f7;; /* Change color on hover */
-  }
-}
-
 @media only screen and (max-width: 1300px) {
+  .wrapper {
+    flex-direction: column-reverse;
+    gap: 0rem;
+  }
+  .accordion {
+    width: auto;
+    margin-top: 0rem;
+  }
+  
 }
 
 @media (min-device-width: 20px) and (max-device-width: 500px) {
@@ -114,9 +117,11 @@
 @media screen and (max-width: 800px) {
   .wrapper {
     flex-direction: column-reverse;
+    gap: 0rem;
   }
   .accordion {
     width: auto;
+    margin-top: -2.0rem;
   }
 }
 
