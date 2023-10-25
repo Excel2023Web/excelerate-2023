@@ -35,6 +35,7 @@ const Leaderboard = () => {
         <img src={titleVecotrRight} alt="" />
       </div>
       <div className="coming__son">
+        <h1 className="coming__sonn_txt">Coming soon</h1>
         <Lottie
           animationData={comingSoonAnimation}
           loop={true}

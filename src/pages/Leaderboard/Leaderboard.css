@@ -18,7 +18,10 @@
   width: 100%;
   align-items: center;
 }
-
+.coming__sonn_txt{
+  color: var(--secondaryColor);
+  font-family: var(--primary-font);
+}
 .goBack{
   margin-left: 10px;
   margin-left: 20px;
