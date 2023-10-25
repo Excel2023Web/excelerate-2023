@@ -89,7 +89,7 @@
 }
 @media only screen and (max-width: 1300px) {
   .wrapper {
-    flex-direction: column-reverse;
+    flex-direction: row;
     gap: 0rem;
   }
   .accordion {
