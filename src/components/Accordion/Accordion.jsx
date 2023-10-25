@@ -58,19 +58,52 @@ const Accordion = () => {
 
 const data = [
   {
-    question: "What is a Campus Ambassador(CA)?",
+    question: "What is the role of a Campus Ambassador?",
     answer:
-      "A Campus Ambassador of Excel 2023 represents Excel 2023 at their respective colleges and is responsible for sharing vital information regarding Excel 2023 within their campus.",
+      "As a Campus Ambassador, your primary role is to represent the tech fest on your campus. This involves promoting the event, engaging with your peers, and encouraging participation.",
   },
   {
-    question: "Who can become a Campus Ambassador?",
+    question: "How do I become a Campus Ambassador?",
     answer:
-      "Any student currently enrolled in a programme at a college with a valid college ID card is eligible to be the Campus Ambassador of Excel 2023 at their campus.",
+      "Typically, you can apply to become a Campus Ambassador by filling out an application provided by the tech fest organizing team.",
   },
   {
-    question: "Where do I register?",
+    question: "What are the responsibilities of a Campus Ambassador?",
     answer:
-      'Register at the top of the website <a href="https://ca.excelmec.org/" target="_blank" class="content-link">ca.excelmec.org</a> by clicking on the register button and filling in your details.',
+      "Responsibilities may include spreading awareness about the event, sharing content, organizing promotional activities, and assisting in logistics.",
+  },
+  {
+    question: "Do Campus Ambassadors have specific targets or goals to meet?",
+    answer:
+      "Yes, often Campus Ambassadors are given targets such as a minimum number of registrations, event attendees, or social media engagement.",
+  },
+  {
+    question: "What benefits do Campus Ambassadors receive?",
+    answer:
+      "Benefits can include free or discounted event tickets, exclusive merchandise, networking opportunities, and recognition on the tech fest's official channels.",
+  },
+  {
+    question: "What kind of content should I share with my peers?",
+    answer:
+      "You should share information about the tech fest, its events, speakers, and any other exciting content related to the event.",
+  },
+  {
+    question:
+      "What should I do if someone is interested participating in the tech fest?",
+    answer:
+      " Encourage them to register, provide guidance on the registration process, and offer any necessary support or information they might need.",
+  },
+  {
+    question:
+      "Can non-tech students become Campus Ambassadors for a tech fest?",
+    answer:
+      "Yes, tech fests often welcome students from various backgrounds to become Campus Ambassadors, as their diversity can help in reaching a wider audience.",
+  },
+  {
+    question:
+      "How can I stay updated about the tech fest's latest developments and updates?",
+    answer:
+      "The organizing team will usually provide you with regular updates and you can also follow their official communication channels for the latest information.",
   },
 ];
 export default Accordion;
