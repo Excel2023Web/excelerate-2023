@@ -48,9 +48,7 @@ const Accordion = () => {
             </div>
           ))}
         </div>
-        <div className="faqimg">
           <img className="faqimgimg" alt="" src={faqimg} />
-        </div>
       </div>
     </div>
   );
