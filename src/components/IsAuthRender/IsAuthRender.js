@@ -57,7 +57,7 @@ const IsAuthRender = ({ state, open, setOpen, onLoginClick, referrelId }) => {
             handleRegistration();
           }}
         >
-          Become Ambassador
+          BECOME AMBASSADOR
         </button>
       </div>
     );
