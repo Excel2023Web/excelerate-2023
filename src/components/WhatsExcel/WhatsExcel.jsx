@@ -14,8 +14,8 @@ function WhatsExcel() {
       </div>
       <p data-aos="fade-up" aos-delay="400" className="whats_excel_content">
         Excel is India’s second largest techno-managerial festival hosted by
-        Govt. Model Engineering College, Kochi. Over the years, more than 2000
-        universities and 1000 institutions from around the country have been
+        Govt. Model Engineering College, Kochi. Over the years, more than 200
+        universities and 100 institutions from around the country have been
         part of Excel. With the rich legacy of 23 successful editions of Excel,
         be geared up for an even more exhilarating event this Excel 2023!
       </p>
