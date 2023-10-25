@@ -123,6 +123,11 @@
     width: auto;
     margin-top: -2.0rem;
   }
+  .faqimgimg {
+    height: 30rem;
+    width: auto;
+  }
+  
 }
 
 @media screen and (max-width: 600px) {
