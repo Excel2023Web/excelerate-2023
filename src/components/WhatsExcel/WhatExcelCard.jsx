@@ -5,7 +5,7 @@ import { config } from "react-spring";
 // import Pic1 from "../../assets/png/whatsimg.png";
 import { useSwipeable } from "react-swipeable";
 import "./WhatsExcel.css";
-import { p1, p2, p3, p4, p5 } from "../../assets/png/gallery";
+import { p1, p2, p3, p4, p5,p6,p7 } from "../../assets/png/gallery";
 function ImageSlider() {
 
   const [goToSlide, setGoToSlide] = useState(0);
@@ -53,6 +53,22 @@ function ImageSlider() {
       content: (
         <div className="panelist__image-container">
           <img src={p5} className="slider__img" alt="1" />
+        </div>
+      ),
+    },
+    {
+      key: uuidv4(),
+      content: (
+        <div className="panelist__image-container">
+          <img src={p6} className="slider__img" alt="1" />
+        </div>
+      ),
+    },
+    {
+      key: uuidv4(),
+      content: (
+        <div className="panelist__image-container">
+          <img src={p7} className="slider__img" alt="1" />
         </div>
       ),
     },

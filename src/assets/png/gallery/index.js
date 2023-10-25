@@ -3,3 +3,5 @@ export { default as p2 } from "./pic2.jpeg";
 export { default as p3 } from "./pic3.jpeg";
 export { default as p4 } from "./pic4.jpeg";
 export { default as p5 } from "./pic5.JPEG";
+export { default as p6 } from "./ps1.JPG";
+export { default as p7 } from "./ps2.JPG";
