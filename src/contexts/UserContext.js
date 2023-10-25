@@ -48,6 +48,21 @@ function UserDetails(props) {
   // }, [excelId]);
 
   useEffect(() => {
+    let index = window.location.href.indexOf("?");
+      const searchString = window.location.href.slice(index);
+      const urlParams = new URLSearchParams(searchString);
+      const refreshToken = urlParams.get("refreshToken");
+      if (refreshToken) localStorage.setItem("refreshToken", refreshToken);
+      AuthHandler.aysncGetAccessToken(refreshToken).then((access_token) => {
+        if (access_token) {
+          getExcelId(access_token);
+        }
+      });
+
+      if (index >= 0) {
+        window.open(window.location.href.slice(0, index), "_self");
+      }
+      
     if (localStorage.getItem("refreshToken")) {
       AuthHandler.aysncGetAccessToken(
         localStorage.getItem("refreshToken")
