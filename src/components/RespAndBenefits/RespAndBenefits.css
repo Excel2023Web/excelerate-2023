@@ -142,6 +142,11 @@
 }
 
 @media screen and (max-width: 600px) {
+  .benefits__left__right{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  } 
   .resp__upper__heading img {
     display: none;
     pointer-events: none;
