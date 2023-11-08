@@ -85,7 +85,7 @@ const IsAuthRender = ({ state, open, setOpen, onLoginClick, referrelId }) => {
             gap: "1rem",
           }}
         >
-          <div>
+          <div style={{fontSize:'1.3rem'}}>
             Referral ID : <b>{referrelId}</b>
           </div>
           <CopyToClipboard text={referrelId} onCopy={() => setCopied(true)}>

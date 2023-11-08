@@ -5,7 +5,7 @@ import titleVecotrRight from "../../assets/svg/title__vector_right.svg";
 import down from "../../assets/svg/down_arrow.svg";
 import up from "../../assets/svg/up_arrow.svg";
 import faqimg from "../../assets/png/faq.png";
-
+import {AiOutlineDown} from 'react-icons/ai'
 const Accordion = () => {
   const [selected, setSelected] = useState(null);
   const toggle = (i) => {
@@ -38,7 +38,7 @@ const Accordion = () => {
                   {selected === i ? (
                     <img src={up} alt="" />
                   ) : (
-                    <img src={down} alt="" />
+                    <AiOutlineDown value={{color:'#F74670'}}/>
                   )}
                 </span>
               </div>
