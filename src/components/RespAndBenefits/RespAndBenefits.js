@@ -9,9 +9,10 @@ import benefitsRightBottom from "../../assets/svg/benefits_right_bottom.svg";
 function RespAndBenefits() {
   return (
     <>
-      <img src={benefitsLeftTop} alt="" className="benefits__left__top"/>
-      <img src={benefitsRightTop} alt="" className="benefits__right__top" />
-
+      <div className="benefits__left__right">
+        <img src={benefitsLeftTop} alt="" className="benefits__left__top"/>
+        <img src={benefitsRightTop} alt="" className="benefits__right__top" />
+      </div>
       <div className="resp__bene__container" id="benefits">
         <div className="responsibilit__container">
           <div className="responsibilit__heading">
