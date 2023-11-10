@@ -219,7 +219,6 @@
         width: 80%;
     }
 }
-
 @media screen and (max-width:850px){
     .mascot__about_container{
         flex-direction: column;
