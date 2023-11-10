@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Accordion.css";
 import titleVectorLeft from "../../assets/svg/title_vector_left.svg";
 import titleVecotrRight from "../../assets/svg/title__vector_right.svg";
-import down from "../../assets/svg/down_arrow.svg";
+// import down from "../../assets/svg/down_arrow.svg";
 import up from "../../assets/svg/up_arrow.svg";
 import faqimg from "../../assets/png/faq.png";
 import {AiOutlineDown} from 'react-icons/ai'
