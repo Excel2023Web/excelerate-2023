@@ -73,6 +73,31 @@
     display: flex;
 } */
 
+.mascot__about_container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    /* padding: 2rem; */
+    /* gap: 1rem; */
+    flex-direction: row;
+    align-items: center;
+}
+.mascot__about_container>img{
+    width: 35rem;
+    animation: verticalMove 2s ease-in-out infinite;;
+    /* margin-left: 10px; */
+}
+
+.mascot__about_container>p{
+    color: white;
+    width: 60%;
+    margin-right: 15%;
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+    line-height: 30px;
+    font-weight: 500;
+    text-align: center;
+}
 .panelist__image-container {
     display: flex;
     flex-direction: column;
@@ -137,6 +162,18 @@
     margin: 0 9rem;
 } */
 
+@keyframes verticalMove {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Adjust the value to control the distance of movement */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
 @media only screen and (max-width: 1300px) {}
 
 @media (min-device-width: 20px) and (max-device-width: 500px) {}
@@ -183,6 +220,14 @@
     }
 }
 
+@media screen and (max-width:850px){
+    .mascot__about_container{
+        flex-direction: column;
+    }
+    .mascot__about_container>p{
+        margin-right: 0;
+    }
+}
 @media screen and (max-width: 700px) {
     .whatexcel__heading h1 {
         font-size: 2rem;
