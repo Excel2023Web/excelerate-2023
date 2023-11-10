@@ -26,6 +26,7 @@ const Accordion = () => {
         <div className="accordion">
           {data.map((item, i) => (
             <div
+            key={i}
               data-aos="zoom-in"
               aos-delay="150"
               className={`item aos-init aos-animate ${
