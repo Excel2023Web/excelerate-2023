@@ -1,49 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Leaderboard.css";
-import excelLogo from "../../assets/png/excelLogo.png";
+import axios from "axios";
+import { eventsBaseUrl } from "../../utils/urls";
+
 const LeaderTable = () => {
+  const [leaders, setLeaders] = useState([]);
+  useEffect(() => {
+    axios.get(`${eventsBaseUrl}/api/ambassadors/list`).then((response) => {
+      console.log("ca: ", response);
+      setLeaders(response.data);
+    });
+  }, []);
   return (
     <div className="leaderTable">
-      <div className="leader__card">
-        <p>1.</p>
-        <div className="leader__name_n_pic">
-          <img src={excelLogo} alt="" />
-          <p>Achyuth Mohan</p>
-        </div>
-        <p>100</p>
-      </div>
-      <div className="leader__card">
-        <p>2.</p>
-        <div className="leader__name_n_pic">
-          <img src={excelLogo} alt="" />
-          <p>Sanosh Jacob</p>
-        </div>
-        <p>100</p>
-      </div>
-      <div className="leader__card">
-        <p>3.</p>
-        <div className="leader__name_n_pic">
-          <img src={excelLogo} alt="" />
-          <p>Adithya Ajith</p>
-        </div>
-        <p>100</p>
-      </div>
-      <div className="leader__card">
-        <p>3.</p>
-        <div className="leader__name_n_pic">
-          <img src={excelLogo} alt="" />
-          <p>Lekshmi S</p>
-        </div>
-        <p>100</p>
-      </div>
-      <div className="leader__card">
-        <p>4.</p>
-        <div className="leader__name_n_pic">
-          <img src={excelLogo} alt="" />
-          <p>Abhishek Kurian</p>
-        </div>
-        <p>100</p>
-      </div>
+      {leaders.map((leader, index) => {
+        return (
+          <div className="leader__card" key={index}>
+            <p>{index+1}</p>
+            <div className="leader__name_n_pic">
+              <img src={leader.image} alt="" />
+              <p>{leader.name}</p>
+            </div>
+            <p>{leader.totalPoints}</p>
+          </div>
+        );
+      })}
     </div>
   );
 };

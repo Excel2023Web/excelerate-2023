@@ -44,7 +44,7 @@
   gap: 2rem;
 }
 .leader__card{
-    width: 70%;
+    width: 75%;
     display: flex;
     border: 1px solid var(--secondaryColor);
     color: #ffff;
@@ -57,12 +57,13 @@
     border-radius: 20px;
 }
 .leader__name_n_pic{
-    display: flex;
-    flex-direction: row;
-    width: 20rem;
-    gap: 1rem;
-    /* justify-content: space-between; */
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  gap: 20px;
+  /* flex-wrap: wrap; */
+  justify-content: flex-start;
+  align-items: center;
 }
 .leader__name_n_pic >img{
     width: 3rem;
