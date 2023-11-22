@@ -7,7 +7,6 @@ const LeaderTable = () => {
   const [leaders, setLeaders] = useState([]);
   useEffect(() => {
     axios.get(`${eventsBaseUrl}/api/ambassadors/list`).then((response) => {
-      console.log("ca: ", response);
       setLeaders(response.data);
     });
   }, []);
