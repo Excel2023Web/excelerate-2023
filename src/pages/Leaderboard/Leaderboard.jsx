@@ -5,6 +5,7 @@ import titleVecotrRight from "../../assets/svg/title__vector_right.svg";
 import LeaderTable from "./LeaderTable";
 import { FiArrowLeft } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
+
 const Leaderboard = () => {
   const navigate = useNavigate();
   const goBack = () => {
