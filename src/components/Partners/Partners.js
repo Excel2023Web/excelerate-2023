@@ -14,7 +14,7 @@ const Partners = () => {
       <div className="prtners__cards_container">
         <div className="partners__card">
             <img src={orangeSystem} alt="" />
-            <p>Campus Ambassador Partner</p>
+            <p>Orange Systemz</p>
         </div>
       </div>
     </div>
