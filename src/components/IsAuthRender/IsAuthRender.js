@@ -85,9 +85,10 @@ const IsAuthRender = ({ state, open, setOpen, onLoginClick, referrelId }) => {
             gap: "1rem",
           }}
         >
-          <div style={{fontSize:'1.3rem'}}>
+          <div style={{ fontSize: "1.3rem" }}>
             Referral ID : <b>{referrelId}</b>
           </div>
+
           <CopyToClipboard text={referrelId} onCopy={() => setCopied(true)}>
             {copied ? (
               <FiCheck className="tmd_icon" />
@@ -96,6 +97,22 @@ const IsAuthRender = ({ state, open, setOpen, onLoginClick, referrelId }) => {
             )}
           </CopyToClipboard>
         </div>
+        <button
+          style={{
+            fontSize: "1.3rem",
+            cursor:"pointer",
+            border: "1px solid #F74670",
+            color: "#F74670",
+            background: "none",
+            padding: "10px",
+            borderRadius: "10px",
+          }}
+          onClick={() => {
+            window.open("https://chat.whatsapp.com/K7y07dKv7M789vPMDFPVmU");
+          }}
+        >
+          Join WhatsApp Group
+        </button>
       </div>
     );
   } else if (state === 3) {
