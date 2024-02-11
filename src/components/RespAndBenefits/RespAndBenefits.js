@@ -71,11 +71,6 @@ function RespAndBenefits() {
             <ul data-aos="zoom-in" aos-delay="200" className="resp___points">
               <li>Avail cash prizes and benefits from a prize pool of ₹15K!</li>
               <li>Earn KTU points through issued certificates.</li>
-
-              <li>
-                Get discounts on ticket prices and free entry to certain Excel
-                events.
-              </li>
               <li>
                 Enrich your communication, leadership, marketing and
                 collaboration skills.

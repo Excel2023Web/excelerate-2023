@@ -55,11 +55,6 @@ function Reward() {
               >
                 <li>1st: Awarded based on individual points.</li>
                 <li>2nd: Awarded based on individual points.</li>
-
-                <li>
-                  Group Prize: Awarded to the group with the highest total
-                  registrations.
-                </li>
               </ul>
             </div>
           </div>
